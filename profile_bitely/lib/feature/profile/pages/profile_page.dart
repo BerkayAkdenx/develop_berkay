@@ -6,20 +6,32 @@ import 'package:profile_bitely/feature/profile/widgets/profile_page_column_widge
 import 'package:profile_bitely/feature/profile/widgets/profile_page_divider_widget.dart';
 import 'package:profile_bitely/feature/profile/widgets/profile_page_stack_widget.dart';
 
+import '../widgets/profile_books_widget.dart';
+
 // ignore: must_be_immutable
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final List books = [
+      'Book 1',
+      'Born Liars',
+      'Book 3',
+      'book 4',
+      'book 6',
+      'book 7',
+      'book 8',
+    ];
     return Scaffold(
       backgroundColor: AppColors.darkPrimary,
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 71),
-        child: Column(
-          children: [
-            //this row for profile and setting
-            Row(
+      body: Column(
+        children: [
+          const SizedBox(height: 50),
+          //this row for profile and setting
+          Padding(
+            padding: AppSpacings.sSymmetricH30,
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Text(
@@ -30,9 +42,8 @@ class ProfilePage extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 ),
                 IconButton(
-                  onPressed: () {
-                    print("click to setting button");
-                  },
+                  // ignore: avoid_print
+                  onPressed: () => print("clicked to setting button"),
                   icon: const Icon(
                     Icons.settings,
                     color: AppColors.lightBackground,
@@ -40,8 +51,11 @@ class ProfilePage extends StatelessWidget {
                 )
               ],
             ),
-            //this row Profile image
-            Row(
+          ),
+          //this row Profile image
+          Padding(
+            padding: AppSpacings.sSymmetricH30,
+            child: Row(
               children: [
                 Container(
                   height: 80,
@@ -92,9 +106,12 @@ class ProfilePage extends StatelessWidget {
                 )
               ],
             ),
-            //this row for 134 bites
-            const SizedBox(height: 14),
-            Row(
+          ),
+          //this row for 134 bites
+          const SizedBox(height: 14),
+          Padding(
+            padding: AppSpacings.sSymmetricH30,
+            child: Row(
               children: const [
                 ProfilePageColumnWidget(
                   num: "134",
@@ -108,21 +125,62 @@ class ProfilePage extends StatelessWidget {
                 ProfilePageColumnWidget(num: "34", text: AppTexts.finished)
               ],
             ),
-            const ProfilePageDividerWidget(),
-            //this row for get Premium
-            Row(
+          ),
+          const ProfilePageDividerWidget(),
+          //this row for get Premium
+          Padding(
+            padding: AppSpacings.sSymmetricH30,
+            child: Row(
               children: const [ProfilePageStackWidget()],
             ),
-            //this row for Keep Reading
-            Row(
-              children: const [],
+          ),
+          const SizedBox(height: 30),
+          //this row for Keep Reading
+          Padding(
+            padding: AppSpacings.sSymmetricH30,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  AppTexts.keepReading,
+                  style: TextStyle(
+                      color: AppColors.lightBackground,
+                      fontSize: 21,
+                      fontWeight: FontWeight.bold),
+                ),
+                InkWell(
+                  child: const Text(
+                    AppTexts.seeAll,
+                    style: TextStyle(
+                        color: AppColors.lightBackground,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  // ignore: avoid_print
+                  onTap: () => print("clicked to see all"),
+                )
+              ],
             ),
-            //this row for books
-            Row(
-              children: const [],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          //this row for books
+          Padding(
+            padding: AppSpacings.sSymmetricH30,
+            child: SizedBox(
+              height: 250,
+              child: ListView.builder(
+                  itemCount: books.length,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return ProfileBooksListWidget(
+                      username: books[index],
+                    );
+                  }),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

@@ -86,7 +86,7 @@ abstract class AppTexts {
   static const remindMe = "remindMe";
   static const share = "share";
   static const seeMore = "seeMore";
-  static const seeAll = "seeAll";
+  static const seeAll = "See All";
   static const bites = "Bites";
   static const page = "page";
   static const of = "of";
@@ -257,7 +257,7 @@ abstract class AppTexts {
 
   // richtext end
 // title start
-  static const keepReading = "keepReading";
+  static const keepReading = "Keep Reading";
   static const trendingNow = "trendingNow";
   static const collectionsOFTwothousand = "collectionsOFTwothousand";
   static const forYou = "forYou";
