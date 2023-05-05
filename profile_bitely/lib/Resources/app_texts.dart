@@ -106,8 +106,9 @@ abstract class AppTexts {
   static const bookmarks = "bookmarks";
   static const finished = "finished";
   static const youHaventStarted = "youHaventStarted";
-  static const paymentFailed = "paymentFailed";
-  static const weAreUnable = "weAreUnable";
+  static const paymentFailed = "Payment failed.";
+  static const weAreUnable =
+      "We are unable to charge your credit card.\n To keep Premium, update your payment\n details.";
   static const orYouCanStart = "orYouCanStart";
   static const getPremium = "Get Premium";
   static const subscribeNowSevenDays = "Subscribe now and try 7 days for free";

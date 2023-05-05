@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:profile_bitely/Resources/app_spacings.dart';
 import 'package:profile_bitely/Resources/app_texts.dart';
 
-class ProfilePageStackWidget extends StatelessWidget {
-  const ProfilePageStackWidget({
+class ProfileGetPremiumWidget extends StatelessWidget {
+  const ProfileGetPremiumWidget({
     super.key,
   });
 

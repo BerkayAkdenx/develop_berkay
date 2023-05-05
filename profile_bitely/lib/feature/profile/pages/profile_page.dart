@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:profile_bitely/Resources/app_colors.dart';
 import 'package:profile_bitely/Resources/app_spacings.dart';
 import 'package:profile_bitely/Resources/app_texts.dart';
+import 'package:profile_bitely/feature/profile/widgets/payment_failed_widget.dart';
 import 'package:profile_bitely/feature/profile/widgets/profile_page_column_widget.dart';
-import 'package:profile_bitely/feature/profile/widgets/profile_page_divider_widget.dart';
-import 'package:profile_bitely/feature/profile/widgets/profile_page_stack_widget.dart';
+import 'package:profile_bitely/feature/profile/widgets/profile_pro_widget.dart';
 
 import '../widgets/profile_books_widget.dart';
 
@@ -26,6 +26,7 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.darkPrimary,
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const SizedBox(height: 50),
           //this row for profile and setting
@@ -85,6 +86,7 @@ class ProfilePage extends StatelessWidget {
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold),
                             ),
+                            ProfileProWidget()
                           ],
                         ),
                         Row(
@@ -117,21 +119,24 @@ class ProfilePage extends StatelessWidget {
                   num: "134",
                   text: AppTexts.bites,
                 ),
-                SizedBox(width: 30),
+                SizedBox(width: 45),
                 ProfilePageColumnWidget(num: "0", text: AppTexts.challenges),
-                SizedBox(width: 30),
+                SizedBox(width: 45),
                 ProfilePageColumnWidget(num: "158", text: AppTexts.likes),
-                SizedBox(width: 30),
+                SizedBox(width: 45),
                 ProfilePageColumnWidget(num: "34", text: AppTexts.finished)
               ],
             ),
           ),
-          const ProfilePageDividerWidget(),
+          const Divider(
+            color: Colors.grey,
+            height: 31,
+          ),
           //this row for get Premium
           Padding(
             padding: AppSpacings.sSymmetricH30,
             child: Row(
-              children: const [ProfilePageStackWidget()],
+              children: const [PaymentFailedWidget()],
             ),
           ),
           const SizedBox(height: 30),
@@ -167,7 +172,7 @@ class ProfilePage extends StatelessWidget {
           ),
           //this row for books
           Padding(
-            padding: AppSpacings.sSymmetricH30,
+            padding: AppSpacings.sL30,
             child: SizedBox(
               height: 250,
               child: ListView.builder(

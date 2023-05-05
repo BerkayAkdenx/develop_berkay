@@ -23,4 +23,5 @@ class AppSpacings {
   static const EdgeInsets sB5 = EdgeInsets.only(bottom: 5.0);
   static const EdgeInsets sB10 = EdgeInsets.only(bottom: 10.0);
   static const EdgeInsets sR5 = EdgeInsets.only(right: 5.0);
+  static const EdgeInsets sL30 = EdgeInsets.only(left: 30.0);
 }
