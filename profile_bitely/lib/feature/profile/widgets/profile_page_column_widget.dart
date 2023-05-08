@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:profile_bitely/Resources/app_colors.dart';
+import 'package:profile_bitely/Resources/app_text_styles.dart';
 
 class ProfilePageColumnWidget extends StatelessWidget {
   const ProfilePageColumnWidget({
@@ -17,18 +19,14 @@ class ProfilePageColumnWidget extends StatelessWidget {
       children: [
         Text(
           num,
-          style: const TextStyle(
-              color: AppColors.background,
-              fontSize: 20,
-              fontWeight: FontWeight.bold),
+          style: AppTextStyles.headlineLargeDark,
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 4.0),
+          padding: EdgeInsets.only(top: 5.0.h),
           child: Text(
             text,
-            style: const TextStyle(
-              color: Color(0xFF969696),
-            ),
+            style: AppTextStyles.bodySmallDark
+                .copyWith(color: AppColors.profileBlackLight),
           ),
         )
       ],
