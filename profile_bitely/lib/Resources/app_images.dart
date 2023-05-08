@@ -8,6 +8,7 @@ class AppImages {
   static const stairs = '$base/stairs.png';
   static const thinking = '$base/thinking.png';
   static const reward = '$base/reward.png';
+  static const setting = '$base/setting.png';
   static const read = '$base/read.png';
   static const listen = '$base/listen.png';
   static const cooking = '$base/cooking.png';
@@ -19,6 +20,7 @@ class AppImages {
   static const discovery = '$base/discovery.png';
   static const library = '$base/library.png';
   static const profile = '$base/profile.png';
+  static const profileDefault = '$base/profileDefault.png';
   static const profileGetPremium = '$base/profileGetPremium.png';
   static const failed = '$base/failed.png';
   static const discoverySlider1 = '$base/discoverySlider1.png';

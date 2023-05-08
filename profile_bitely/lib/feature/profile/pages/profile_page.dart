@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:profile_bitely/Resources/app_colors.dart';
+import 'package:profile_bitely/Resources/app_images.dart';
+import 'package:profile_bitely/Resources/app_radiuses.dart';
 import 'package:profile_bitely/Resources/app_spacings.dart';
+import 'package:profile_bitely/Resources/app_text_styles.dart';
 import 'package:profile_bitely/Resources/app_texts.dart';
 import 'package:profile_bitely/feature/profile/widgets/payment_failed_widget.dart';
 import 'package:profile_bitely/feature/profile/widgets/profile_page_column_widget.dart';
@@ -28,28 +32,20 @@ class ProfilePage extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const SizedBox(height: 50),
+          SizedBox(height: 50.h),
           //this row for profile and setting
           Padding(
             padding: AppSpacings.sSymmetricH30,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text(
+                Text(
                   AppTexts.profile,
-                  style: TextStyle(
-                      color: AppColors.lightBackground,
-                      fontSize: 21,
-                      fontWeight: FontWeight.bold),
+                  style: AppTextStyles.headlineLargeDark,
                 ),
-                IconButton(
-                  // ignore: avoid_print
-                  onPressed: () => print("clicked to setting button"),
-                  icon: const Icon(
-                    Icons.settings,
-                    color: AppColors.lightBackground,
-                  ),
-                )
+                GestureDetector(
+                    onTap: () => print("clicked the setting"),
+                    child: Image.asset(AppImages.setting)),
               ],
             ),
           ),
@@ -59,45 +55,41 @@ class ProfilePage extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  height: 80,
-                  width: 80,
+                  height: 70.h,
+                  width: 70.w,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: AppColors.blue,
+                    borderRadius: AppRadiuses.radiusAll50,
+                    color: AppColors.onPrimaryDark,
                   ),
                   child: Image.asset(
-                    "assets/Images/profileDefault.png",
+                    AppImages.profileDefault,
                     scale: 1.1,
                   ),
                 ),
                 Padding(
                   padding: AppSpacings.sAll20,
                   child: SizedBox(
-                    width: 200,
+                    width: 193.w,
                     child: Column(
                       children: [
                         Row(
-                          children: const [
+                          children: [
                             Text(
-                              "Burak Volkan Çoşkun",
-                              style: TextStyle(
-                                  color: AppColors.lightBackground,
-                                  wordSpacing: 2,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold),
+                              "Burak Volkan Coşkun",
+                              style: AppTextStyles.titleLargeDark
+                                  .copyWith(wordSpacing: 2, letterSpacing: 1),
                             ),
-                            ProfileProWidget()
+                            const ProfileProWidget()
                           ],
                         ),
                         Row(
-                          children: const [
+                          children: [
                             Padding(
                               padding: AppSpacings.sSymmetricV8,
                               child: Text(
                                 AppTexts.editProfile,
-                                style: TextStyle(
-                                    color: Color(0xFF969696),
-                                    fontWeight: FontWeight.bold),
+                                style: AppTextStyles.bodySmallDark.copyWith(
+                                    color: AppColors.profileBlackLight),
                               ),
                             ),
                           ],
@@ -110,27 +102,29 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           //this row for 134 bites
-          const SizedBox(height: 14),
+          SizedBox(height: 11.h),
           Padding(
             padding: AppSpacings.sSymmetricH30,
             child: Row(
-              children: const [
-                ProfilePageColumnWidget(
+              children: [
+                const ProfilePageColumnWidget(
                   num: "134",
                   text: AppTexts.bites,
                 ),
-                SizedBox(width: 45),
-                ProfilePageColumnWidget(num: "0", text: AppTexts.challenges),
-                SizedBox(width: 45),
-                ProfilePageColumnWidget(num: "158", text: AppTexts.likes),
-                SizedBox(width: 45),
-                ProfilePageColumnWidget(num: "34", text: AppTexts.finished)
+                SizedBox(width: 45.w),
+                const ProfilePageColumnWidget(
+                    num: "0", text: AppTexts.challenges),
+                SizedBox(width: 45.w),
+                const ProfilePageColumnWidget(num: "158", text: AppTexts.likes),
+                SizedBox(width: 45.w),
+                const ProfilePageColumnWidget(
+                    num: "34", text: AppTexts.finished)
               ],
             ),
           ),
-          const Divider(
+          Divider(
             color: Colors.grey,
-            height: 31,
+            height: 31.h,
           ),
           //this row for get Premium
           Padding(
@@ -139,27 +133,19 @@ class ProfilePage extends StatelessWidget {
               children: const [PaymentFailedWidget()],
             ),
           ),
-          const SizedBox(height: 30),
+          SizedBox(height: 25.h),
           //this row for Keep Reading
           Padding(
             padding: AppSpacings.sSymmetricH30,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text(
-                  AppTexts.keepReading,
-                  style: TextStyle(
-                      color: AppColors.lightBackground,
-                      fontSize: 21,
-                      fontWeight: FontWeight.bold),
-                ),
+                Text(AppTexts.keepReading,
+                    style: AppTextStyles.headlineLargeDark),
                 InkWell(
-                  child: const Text(
+                  child: Text(
                     AppTexts.seeAll,
-                    style: TextStyle(
-                        color: AppColors.lightBackground,
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold),
+                    style: AppTextStyles.bodyMediumDark,
                   ),
                   // ignore: avoid_print
                   onTap: () => print("clicked to see all"),
@@ -167,14 +153,14 @@ class ProfilePage extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(
-            height: 10,
+          SizedBox(
+            height: 10.h,
           ),
           //this row for books
           Padding(
             padding: AppSpacings.sL30,
             child: SizedBox(
-              height: 250,
+              height: 250.h,
               child: ListView.builder(
                   itemCount: books.length,
                   scrollDirection: Axis.horizontal,
