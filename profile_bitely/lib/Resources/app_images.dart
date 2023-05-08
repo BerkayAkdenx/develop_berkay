@@ -13,6 +13,7 @@ class AppImages {
   static const cooking = '$base/cooking.png';
   static const body = '$base/body.png';
   static const referralCode = '$base/referralCodeBackground.png';
+  static const bookRecommendationSample = '$base/bookRecommendationSample.png';
   static const home = '$base/home.png';
   static const search = '$base/search.png';
   static const discovery = '$base/discovery.png';

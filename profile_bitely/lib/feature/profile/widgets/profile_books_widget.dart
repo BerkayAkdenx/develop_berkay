@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:profile_bitely/Resources/app_colors.dart';
+import 'package:profile_bitely/Resources/app_images.dart';
+import 'package:profile_bitely/Resources/app_radiuses.dart';
+import 'package:profile_bitely/Resources/app_spacings.dart';
+import 'package:profile_bitely/Resources/app_text_styles.dart';
 
 class ProfileBooksListWidget extends StatelessWidget {
   final String username;
@@ -11,14 +16,14 @@ class ProfileBooksListWidget extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: AppSpacings.sAll8,
           child: Container(
-            width: 120.0,
-            height: 150.0,
+            width: 110.0.w,
+            height: 140.0.h,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10.0),
+              borderRadius: AppRadiuses.radiusAll10,
               image: const DecorationImage(
-                image: AssetImage('assets/Images/bookRecommendationSample.png'),
+                image: AssetImage(AppImages.bookRecommendationSample),
                 fit: BoxFit.cover,
               ),
             ),
@@ -26,21 +31,21 @@ class ProfileBooksListWidget extends StatelessWidget {
         ),
         Text(
           username,
-          style: const TextStyle(fontSize: 14, color: Colors.white),
+          style: AppTextStyles.titleSmallDark,
         ),
-        const Padding(
-          padding: EdgeInsets.all(8.0),
+        Padding(
+          padding: AppSpacings.sAll8,
           child: Text(
             "Author Name",
-            style: TextStyle(fontSize: 10, color: Colors.white),
+            style: AppTextStyles.bodySmallDark.copyWith(fontSize: 9.sp),
           ),
         ),
-        const Padding(
-          padding: EdgeInsets.only(top: 8.0),
+        Padding(
+          padding: AppSpacings.sAll8,
           child: SizedBox(
-            height: 3,
-            width: 120,
-            child: LinearProgressIndicator(
+            height: 3.h,
+            width: 110.0.w,
+            child: const LinearProgressIndicator(
               color: AppColors.blue,
               backgroundColor: AppColors.blackLight,
               value: 0.5, // İlerleme yüzdesi burada belirtilir.
