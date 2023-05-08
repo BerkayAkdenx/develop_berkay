@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:profile_bitely/Resources/app_images.dart';
+import 'package:profile_bitely/Resources/app_radiuses.dart';
 import 'package:profile_bitely/Resources/app_spacings.dart';
+import 'package:profile_bitely/Resources/app_text_styles.dart';
 import 'package:profile_bitely/Resources/app_texts.dart';
 
 class ProfileGetPremiumWidget extends StatelessWidget {
@@ -12,34 +16,36 @@ class ProfileGetPremiumWidget extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          width: 320,
-          height: 100,
+          width: 305.w,
+          height: 95.h,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: AppRadiuses.radiusAll10,
               color: const Color(0xFF8cfccf)),
         ),
-        Image.asset("assets/Images/profileGetPremium.png"),
+        Image.asset(AppImages.profileGetPremium),
         SizedBox(
-          width: 320,
-          height: 100,
+          width: 305.w,
+          height: 95.h,
           child: Padding(
             padding: AppSpacings.sAll20,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Row(
-                  children: const [
+                  children: [
                     Text(
                       AppTexts.getPremium,
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style: AppTextStyles.headlineLargeLight,
                     ),
                   ],
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: 10.h),
                 Row(
-                  children: const [
-                    Text(AppTexts.subscribeNowSevenDays),
+                  children: [
+                    Text(
+                      AppTexts.subscribeNowSevenDays,
+                      style: AppTextStyles.bodyMediumLight,
+                    ),
                   ],
                 )
               ],

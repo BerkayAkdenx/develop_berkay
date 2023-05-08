@@ -18,6 +18,8 @@ class AppImages {
   static const discovery = '$base/discovery.png';
   static const library = '$base/library.png';
   static const profile = '$base/profile.png';
+  static const profileGetPremium = '$base/profileGetPremium.png';
+  static const failed = '$base/failed.png';
   static const discoverySlider1 = '$base/discoverySlider1.png';
   static const discoverySlider2 = '$base/discoverySlider2.png';
   static const discoverySlider3 = '$base/discoverySlider3.png';
