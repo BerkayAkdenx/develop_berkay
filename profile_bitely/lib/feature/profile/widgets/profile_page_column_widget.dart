@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:profile_bitely/Resources/app_colors.dart';
-import 'package:profile_bitely/Resources/app_text_styles.dart';
+import 'package:profile_bitely/core/Resources/app_colors.dart';
+import 'package:profile_bitely/core/Resources/app_text_styles.dart';
 
 class ProfilePageColumnWidget extends StatelessWidget {
   const ProfilePageColumnWidget({

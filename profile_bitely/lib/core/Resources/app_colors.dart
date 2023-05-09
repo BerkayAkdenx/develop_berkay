@@ -25,6 +25,7 @@ class AppColors {
   static const greenLight = Color(0xff32FFB4);
   static const blueDark = Color(0xff182C5C);
   static const purple = Color(0xffC096FF);
+  static const settingRowBackground = Color(0xff172138);
   static const profileBlackLight = Color(0xFF969696);
   static const blackLight = Color(0xff4a4a4a);
   static const redDark = Color.fromRGBO(255, 0, 80, 0.2);
