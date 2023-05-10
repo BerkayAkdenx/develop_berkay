@@ -11,18 +11,15 @@ class ClicklessContainerWidget extends StatelessWidget {
   final String text;
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      alignment: Alignment.centerLeft,
       height: 65.h,
-      child: Row(
-        children: [
-          Padding(
-            padding: AppSpacings.sL15,
-            child: Text(
-              text,
-              style: AppTextStyles.titleMediumDark,
-            ),
-          ),
-        ],
+      child: Padding(
+        padding: AppSpacings.sL15,
+        child: Text(
+          text,
+          style: AppTextStyles.titleMediumDark,
+        ),
       ),
     );
   }
