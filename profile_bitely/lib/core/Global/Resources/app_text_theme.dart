@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:profile_bitely/core/Resources/app_text_styles.dart';
+import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 
 class AppTextTheme {
   static TextTheme lightTextTheme() => TextTheme(

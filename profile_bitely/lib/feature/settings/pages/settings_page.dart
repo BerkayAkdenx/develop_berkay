@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:profile_bitely/Resources/app_texts.dart';
-import 'package:profile_bitely/core/Resources/app_colors.dart';
-import 'package:profile_bitely/core/Resources/app_images.dart';
-import 'package:profile_bitely/core/Resources/app_spacings.dart';
-import 'package:profile_bitely/core/Resources/app_text_styles.dart';
+import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
+import 'package:profile_bitely/core/Global/Resources/app_images.dart';
+import 'package:profile_bitely/core/Global/Resources/app_radiuses.dart';
+import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
+import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickless_container_widget.dart';
 
@@ -114,13 +115,43 @@ class SettingPage extends StatelessWidget {
                 onPressed: () =>
                     print("go to edit Terms and  conditions page")),
             SizedBox(
-              height: 95.h,
+              height: 75.h,
             ),
             // this row for sign out button
-            ElevatedButton(
-                onPressed: () {}, child: const Text(AppTexts.buttonsingOut)),
+            BaseButtonWidget(
+                onPressed: () => print("clicked sing out"),
+                text: AppTexts.buttonsingOut),
+            SizedBox(
+              height: 50.h,
+            ),
           ]),
         ),
+      ),
+    );
+  }
+}
+
+class BaseButtonWidget extends StatelessWidget {
+  const BaseButtonWidget({
+    super.key,
+    required this.text,
+    required this.onPressed,
+  });
+  final String text;
+  final VoidCallback onPressed;
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: onPressed,
+      style: ElevatedButton.styleFrom(
+          padding:
+              AppSpacings.sSymmetricH50V20.copyWith(right: 60.w, left: 60.w),
+          backgroundColor: AppColors.secondaryDark,
+          shape: RoundedRectangleBorder(borderRadius: AppRadiuses.radiusAll50)),
+      child: Text(
+        text,
+        style:
+            AppTextStyles.bodySmallLight.copyWith(fontWeight: FontWeight.bold),
       ),
     );
   }
