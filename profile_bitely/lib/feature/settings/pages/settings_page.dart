@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:profile_bitely/Resources/app_texts.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_images.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
+import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
+import 'package:profile_bitely/feature/settings/pages/edit_page.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickless_container_widget.dart';
@@ -20,7 +21,7 @@ class SettingPage extends StatelessWidget {
         child: Column(children: [
           //this row for appbar
           Padding(
-            padding: AppSpacings.sL15T50,
+            padding: AppSpacings.sL15T60,
             child: Row(
               children: [
                 IconButton(
@@ -55,7 +56,12 @@ class SettingPage extends StatelessWidget {
           // this row for Edit Profile
           ClickableContainerWidget(
             text: AppTexts.editProfile,
-            onPressed: () => print("go to edit profile page"),
+            // go to edit profile page
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const EditPage(),
+                )),
           ),
           // this row for Billing Details
           ClickableContainerWidget(

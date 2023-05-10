@@ -28,6 +28,7 @@ class AppColors {
   static const settingRowBackground = Color(0xff172138);
   static const profileBlackLight = Color(0xFF969696);
   static const blackLight = Color(0xff4a4a4a);
+  static final whiteOpasity = Colors.white.withOpacity(0.7);
   static const redDark = Color.fromRGBO(255, 0, 80, 0.2);
   static const greenDark = Color.fromRGBO(0, 118, 75, 0.2);
   static const navBarColor = Color.fromRGBO(15, 28, 58, 1);

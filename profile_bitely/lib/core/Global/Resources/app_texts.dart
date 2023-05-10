@@ -183,7 +183,7 @@ abstract class AppTexts {
   static const enjoyYourBooks = "enjoyYourBooks";
   static const continueYour = "continueYour";
   static const adFree = "adFree";
-  static const buttonDeleteMyAccount = "buttonDeleteMyAccount";
+  static const buttonDeleteMyAccount = "Delete Account";
   static const min = "min";
   static const preview = "preview";
 
@@ -213,7 +213,7 @@ abstract class AppTexts {
   static const appbarReferralCode = "appbarReferralCode";
   static const appbarCreateAnAccount = "appbarCreateAnAccount";
   static const appbarForgotPassword = "appbarForgotPassword";
-  static const appbarMainGoal = "appbarMainGoal";
+  static const appbarMainGoal = "Main Goal";
   static const appbarCategories = "appbarCategories";
   static const appbarLanguage = "appbarLanguage";
   static const appbarGender = "appbarGender";
@@ -229,13 +229,13 @@ abstract class AppTexts {
   static const appbarRequestContent = "appbarRequestContent";
   static const appbarContactUs = "appbarContactUs";
   static const appbarChangePassword = "appbarChangePassword";
-  static const appbarTrainingPace = "appbarTrainingPace";
+  static const appbarTrainingPace = "Training Pace";
 
   // appbar end
   // label start
   static const name = "name";
   static const email = "email";
-  static const password = "password";
+  static const password = "Password";
   static const enterName = "enterName";
   static const enterEmailAddress = "enterEmailAddress";
   static const confirmPassword = "confirmPassword";
@@ -263,11 +263,12 @@ abstract class AppTexts {
   static const trendingNow = "trendingNow";
   static const collectionsOFTwothousand = "collectionsOFTwothousand";
   static const forYou = "forYou";
+  static const save = "SAVE";
   static const description = "description";
   static const allBites = "allBites";
   static const insight = "insight";
   static const yourTopCategories = "yourTopCategories";
-  static const categories = "categories";
+  static const categories = "Categories";
   static const recentSearches = "recentSearches";
   static const dailyBitesSpacely = "dailyBitesSpacely";
   static const activities = "activities";

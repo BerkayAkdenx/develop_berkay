@@ -5,7 +5,7 @@ import 'package:profile_bitely/core/Global/Resources/app_images.dart';
 import 'package:profile_bitely/core/Global/Resources/app_radiuses.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
-import 'package:profile_bitely/Resources/app_texts.dart';
+import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
 import 'package:profile_bitely/feature/profile/widgets/payment_failed_widget.dart';
 import 'package:profile_bitely/feature/profile/widgets/profile_page_column_widget.dart';
 import 'package:profile_bitely/feature/profile/widgets/profile_pro_widget.dart';
