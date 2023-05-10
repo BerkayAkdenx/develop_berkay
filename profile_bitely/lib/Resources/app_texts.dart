@@ -114,7 +114,7 @@ abstract class AppTexts {
   static const getPremium = "Get Premium";
   static const subscribeNowSevenDays = "Subscribe now and try 7 days for free";
   static const account = "Account";
-  static const preferences = "preferences";
+  static const preferences = "Preferences";
   static const notifications = "Notifications";
   static const about = "About";
   static const aboutBitely = "About Bitely";

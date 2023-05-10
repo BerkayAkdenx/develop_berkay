@@ -1,41 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 
 class ClickableContainerWidget extends StatelessWidget {
-  const ClickableContainerWidget({
-    super.key,
-    required this.text,
-    required this.onPressed,
-  });
+  const ClickableContainerWidget(
+      {super.key,
+      required this.text,
+      required this.onPressed,
+      this.isExternal = false});
 
   final String text;
   final VoidCallback onPressed;
+  final bool isExternal;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 60.h,
-      color: AppColors.settingRowBackground,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Padding(
-            padding: AppSpacings.sL15,
-            child: Text(
-              text,
-              style: AppTextStyles.titleMediumDark,
+    return ListTile(
+      contentPadding: AppSpacings.sAll12,
+      tileColor: AppColors.settingRowBackground,
+      trailing: isExternal
+          ? null
+          : const Icon(
+              Icons.navigate_next,
+              color: Colors.white,
+              size: 30,
             ),
-          ),
-          IconButton(
-              onPressed: onPressed,
-              icon: const Icon(
-                Icons.navigate_next,
-                color: Colors.white,
-              ))
-        ],
+      onTap: onPressed,
+      title: Text(
+        text,
+        style: AppTextStyles.titleMediumDark
+            .copyWith(color: Colors.white.withOpacity(0.7)),
       ),
     );
   }

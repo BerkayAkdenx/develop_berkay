@@ -91,6 +91,7 @@ class SettingPage extends StatelessWidget {
             //this row for About Bitely
             ClickableContainerWidget(
               text: AppTexts.aboutBitely,
+              isExternal: true,
               onPressed: () => print("go to edit About Bitely page"),
             ),
             // this row for Give Us Feedback
@@ -108,10 +109,12 @@ class SettingPage extends StatelessWidget {
             // this row for Privacy policy
             ClickableContainerWidget(
                 text: AppTexts.privacyPolicy,
+                isExternal: true,
                 onPressed: () => print("go to edit Privacy policy page")),
             // this row for Terms and  conditions
             ClickableContainerWidget(
                 text: AppTexts.termsAndConditions,
+                isExternal: true,
                 onPressed: () =>
                     print("go to edit Terms and  conditions page")),
             SizedBox(
