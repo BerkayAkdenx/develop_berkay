@@ -126,7 +126,7 @@ abstract class AppTexts {
   static const fullName = "fullName";
   static const username = "username";
   static const thinksYouLike = "thinksYouLike";
-  static const pushNotification = "pushNotification";
+  static const pushNotification = "Push Notification";
   static const dailyReminder = "dailyReminder";
   static const personalReminders = "personalReminders";
   static const thingsYouSaved = "thingsYouSaved";

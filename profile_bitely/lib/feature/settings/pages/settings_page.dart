@@ -6,6 +6,7 @@ import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
 import 'package:profile_bitely/feature/settings/pages/edit_page.dart';
+import 'package:profile_bitely/feature/settings/pages/notification_page.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickless_container_widget.dart';
@@ -75,7 +76,12 @@ class SettingPage extends StatelessWidget {
           // this row for Notifications
           ClickableContainerWidget(
             text: AppTexts.notifications,
-            onPressed: () => print("go to edit notifications page"),
+            // go to  notifications page
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const NotificationPage(),
+                )),
           ),
           // this row for Language
           ClickableContainerWidget(
