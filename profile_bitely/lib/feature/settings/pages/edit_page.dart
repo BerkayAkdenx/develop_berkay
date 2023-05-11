@@ -5,8 +5,8 @@ import 'package:profile_bitely/core/Global/Resources/app_images.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
+import 'package:profile_bitely/feature/settings/widgets/appbar_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
-import 'package:profile_bitely/feature/settings/widgets/base_savebutton_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
 
 class EditPage extends StatelessWidget {
@@ -20,28 +20,14 @@ class EditPage extends StatelessWidget {
         child: Column(
           children: [
             //this row for appbar
-            Padding(
-              padding: AppSpacings.sL15T60,
-              child: Row(
-                children: [
-                  IconButton(
-                      // clicked  the back button
-                      onPressed: () => Navigator.pop(context),
-                      icon: const Icon(
-                        Icons.arrow_back_ios,
-                        color: Colors.white,
-                      )),
-                  Text(
-                    AppTexts.editProfile,
-                    style: AppTextStyles.headlineLargeDark,
-                  ),
-                  const Spacer(),
-                  BaseSaveButtonWidget(
-                    onpressed: () => print("clicked save button"),
-                  )
-                ],
-              ),
+            AppbarWidget(
+              title: AppTexts.editProfile,
+              saveActive: true,
+              onpressedForSave: () {
+                print("clicked save button");
+              },
             ),
+
             // this row for profile image
             Column(
               children: [

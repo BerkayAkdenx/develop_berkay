@@ -131,13 +131,16 @@ abstract class AppTexts {
   static const personalReminders = "personalReminders";
   static const thingsYouSaved = "thingsYouSaved";
   static const updateOffers = "updateOffers";
-  static const morningLearning = "morningLearning";
+  static const morningLearning = "Morning Learning";
   static const youCanChooseMultipleFor = "youCanChooseMultipleFor";
-  static const stayingInTrack = "stayingInTrack";
-  static const getReminders = "getReminders";
-  static const upToDate = "upToDate";
-  static const weWillRecommend = "weWillRecommend";
-  static const rememberToHit = "rememberToHit";
+  static const stayingOnTrack = "Staying on Track";
+  static const getReminders =
+      "Get reminders to revise book ideas and get inspired by daily insights. ";
+  static const upToDate = "Up To Date";
+  static const weWillRecommend =
+      "We’ll recommend you new gems based on your interest.";
+  static const rememberToHit =
+      "Remember to hit your daily reading goal and never lose your streak.";
   static const weAreSorry = "weAreSorry";
   static const pleaseShareTheReason = "pleaseShareTheReason";
   static const costRelatedReasons = "costRelatedReasons";
