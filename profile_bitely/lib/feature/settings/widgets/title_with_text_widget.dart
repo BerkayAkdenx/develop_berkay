@@ -28,7 +28,8 @@ class TitleWithText extends StatelessWidget {
           width: 270.w,
           child: AutoSizeText(
             text,
-            style: AppTextStyles.bodySmallDark,
+            style: AppTextStyles.bodySmallDark
+                .copyWith(color: Colors.white.withOpacity(0.85)),
             maxLines: 2,
           ),
         ),

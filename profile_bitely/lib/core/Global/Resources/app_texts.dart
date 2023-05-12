@@ -101,11 +101,11 @@ abstract class AppTexts {
   static const goodNight = "goodNight";
   static const editProfile = "Edit Profile";
   static const billingDetails = "Billing Details";
-  static const challenges = "challenges";
-  static const likes = "likes";
+  static const challenges = "Challenges";
+  static const likes = "Likes";
   static const bitelist = "bitelist";
   static const bookmarks = "bookmarks";
-  static const finished = "finished";
+  static const finished = "Finished";
   static const youHaventStarted = "youHaventStarted";
   static const paymentFailed = "Payment failed.";
   static const weAreUnable =
@@ -114,7 +114,7 @@ abstract class AppTexts {
   static const getPremium = "Get Premium";
   static const subscribeNowSevenDays = "Subscribe now and try 7 days for free";
   static const account = "Account";
-  static const preferences = "preferences";
+  static const preferences = "Preferences";
   static const notifications = "Notifications";
   static const about = "About";
   static const aboutBitely = "About Bitely";
@@ -126,7 +126,7 @@ abstract class AppTexts {
   static const fullName = "fullName";
   static const username = "username";
   static const thinksYouLike = "thinksYouLike";
-  static const pushNotification = "Push Notification";
+  static const pushNotification = "Push Notifications";
   static const dailyReminder = "dailyReminder";
   static const personalReminders = "personalReminders";
   static const thingsYouSaved = "thingsYouSaved";
@@ -136,7 +136,7 @@ abstract class AppTexts {
   static const stayingOnTrack = "Staying on Track";
   static const getReminders =
       "Get reminders to revise book ideas and get inspired by daily insights. ";
-  static const upToDate = "Up To Date";
+  static const upToDate = "Up to date";
   static const weWillRecommend =
       "We’ll recommend you new gems based on your interest.";
   static const rememberToHit =

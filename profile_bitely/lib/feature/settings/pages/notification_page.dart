@@ -18,7 +18,7 @@ class NotificationPage extends StatelessWidget {
           //this row for appbar
           AppbarWidget(
             title: AppTexts.notifications,
-            saveActive: true,
+            saveActive: false,
             onpressedForSave: () {},
           ),
           SizedBox(height: 50.h),

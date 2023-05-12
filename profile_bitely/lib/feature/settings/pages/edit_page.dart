@@ -32,7 +32,10 @@ class EditPage extends StatelessWidget {
             Column(
               children: [
                 SizedBox(height: 40.h),
-                Image.asset(AppImages.settingsProfile),
+                Image.asset(
+                  AppImages.settingsProfile,
+                  scale: 0.8,
+                ),
                 Padding(
                   padding: AppSpacings.sAll20,
                   child: Text(
@@ -52,9 +55,9 @@ class EditPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(right: 61.w),
+                      padding: EdgeInsets.only(right: 76.w),
                       child: Text(
-                        "Email :",
+                        "Email:",
                         style: AppTextStyles.titleMediumDark
                             .copyWith(color: AppColors.whiteOpasity),
                       ),
@@ -77,9 +80,9 @@ class EditPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(right: 30.w),
+                      padding: EdgeInsets.only(right: 45.w),
                       child: Text(
-                        "Full Name :",
+                        "Full Name:",
                         style: AppTextStyles.titleMediumDark
                             .copyWith(color: AppColors.whiteOpasity),
                       ),

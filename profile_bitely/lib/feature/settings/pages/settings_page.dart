@@ -42,7 +42,10 @@ class SettingPage extends StatelessWidget {
           Column(
             children: [
               SizedBox(height: 40.h),
-              Image.asset(AppImages.settingsProfile),
+              Image.asset(
+                AppImages.settingsProfile,
+                scale: 0.8,
+              ),
               Padding(
                 padding: AppSpacings.sAll20,
                 child: Text(

@@ -17,7 +17,7 @@ class ClickableContainerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      contentPadding: AppSpacings.sAll12,
+      contentPadding: AppSpacings.sAll16,
       tileColor: AppColors.settingRowBackground,
       trailing: isExternal
           ? null

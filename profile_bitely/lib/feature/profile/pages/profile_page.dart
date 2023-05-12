@@ -6,7 +6,7 @@ import 'package:profile_bitely/core/Global/Resources/app_radiuses.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
-import 'package:profile_bitely/feature/profile/widgets/payment_failed_widget.dart';
+import 'package:profile_bitely/feature/profile/widgets/profile_get_premium_widget.dart';
 import 'package:profile_bitely/feature/profile/widgets/profile_page_column_widget.dart';
 import 'package:profile_bitely/feature/profile/widgets/profile_with_pro_widget.dart';
 
@@ -74,7 +74,7 @@ class ProfilePage extends StatelessWidget {
                       children: [
                         const ProfileWithProWidget(
                           text: "Burak Volkan Coşkun",
-                          proTagActive: true,
+                          proTagActive: false,
                         ),
                         Row(
                           children: [
@@ -118,7 +118,7 @@ class ProfilePage extends StatelessWidget {
             //this row for get Premium
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [PaymentFailedWidget()],
+              children: const [ProfileGetPremiumWidget()],
             ),
             SizedBox(height: 25.h),
             //this row for Keep Reading
