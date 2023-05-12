@@ -65,12 +65,11 @@ class ProfilePage extends StatelessWidget {
                     ),
                     child: Image.asset(
                       AppImages.profileDefault,
-                      scale: 1.1,
+                      scale: 0.9,
                     ),
                   ),
                   SizedBox(width: 15.w),
-                  SizedBox(
-                    width: 220.w,
+                  Expanded(
                     child: Column(
                       children: [
                         const ProfileWithProWidget(
