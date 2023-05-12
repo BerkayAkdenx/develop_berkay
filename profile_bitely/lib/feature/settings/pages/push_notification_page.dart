@@ -32,7 +32,7 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
           ),
           SizedBox(height: 50.h),
           SizedBox(
-            height: 50.h,
+            height: 65.h,
             child: Padding(
               padding: AppSpacings.sL15,
               child: Row(
@@ -59,7 +59,7 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
           ),
           SizedBox(height: 40.h),
           SizedBox(
-            height: 50.h,
+            height: 65.h,
             child: Padding(
               padding: AppSpacings.sL15,
               child: Row(
@@ -86,7 +86,7 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
           ),
           SizedBox(height: 40.h),
           SizedBox(
-            height: 50.h,
+            height: 65.h,
             child: Padding(
               padding: AppSpacings.sL15,
               child: Row(

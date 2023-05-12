@@ -14,12 +14,13 @@ class ProfileBooksListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
           padding: AppSpacings.sAll8,
           child: Container(
             width: 110.0.w,
-            height: 140.0.h,
+            height: 150.0.h,
             decoration: BoxDecoration(
               borderRadius: AppRadiuses.radiusAll10,
               image: const DecorationImage(
@@ -29,9 +30,12 @@ class ProfileBooksListWidget extends StatelessWidget {
             ),
           ),
         ),
-        Text(
-          username,
-          style: AppTextStyles.titleSmallDark,
+        Padding(
+          padding: AppSpacings.sL15.copyWith(left: 8),
+          child: Text(
+            username,
+            style: AppTextStyles.titleSmallDark,
+          ),
         ),
         Padding(
           padding: AppSpacings.sAll8,
