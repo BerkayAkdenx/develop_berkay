@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/controller/test_page_controller.dart';
 
 class TestPage extends StatelessWidget {
   TestPage({super.key});
@@ -20,18 +21,5 @@ class TestPage extends StatelessWidget {
             )),
       ),
     );
-  }
-}
-
-class testPageController {
-  RxInt count = 0.obs;
-
-  arttir() {
-    count++;
-    print(count);
-  }
-
-  azalt() {
-    count--;
   }
 }
