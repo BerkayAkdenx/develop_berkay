@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      initialRoute: Routes.HOME_PAGE,
+      initialRoute: Routes.TEST_PAGE,
       getPages: Pages.pages,
     );
   }

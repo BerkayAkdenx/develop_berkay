@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:getx/page/home_page.dart';
 import 'package:getx/page/profile_page.dart';
+import 'package:getx/page/test_page.dart';
 import 'package:getx/routes/routes.dart';
 
 abstract class Pages {
@@ -13,5 +14,9 @@ abstract class Pages {
       name: Routes.PROFILE_PAGE,
       page: () => const ProfilePage(),
     ),
+    GetPage(
+      name: Routes.TEST_PAGE,
+      page: () => TestPage(),
+    )
   ];
 }
