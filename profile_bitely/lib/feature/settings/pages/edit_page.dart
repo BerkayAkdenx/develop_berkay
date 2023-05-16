@@ -50,50 +50,46 @@ class EditPage extends StatelessWidget {
             Container(
               color: AppColors.settingRowBackground,
               height: 65.h,
-              child: Padding(
-                padding: AppSpacings.sL15,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(right: 76.w),
-                      child: Text(
-                        "Email:",
-                        style: AppTextStyles.titleMediumDark
-                            .copyWith(color: AppColors.whiteOpasity),
-                      ),
-                    ),
-                    Text(
-                      "erenaksoyyy@gmail.com",
-                      style: AppTextStyles.bodyMediumDark
+              padding: AppSpacings.sL15,
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(right: 76.w),
+                    child: Text(
+                      "Email:",
+                      style: AppTextStyles.titleMediumDark
                           .copyWith(color: AppColors.whiteOpasity),
-                    )
-                  ],
-                ),
+                    ),
+                  ),
+                  Text(
+                    "erenaksoyyy@gmail.com",
+                    style: AppTextStyles.bodyMediumDark
+                        .copyWith(color: AppColors.whiteOpasity),
+                  )
+                ],
               ),
             ),
             // this row is Full name
             Container(
               color: AppColors.settingRowBackground,
               height: 65.h,
-              child: Padding(
-                padding: AppSpacings.sL15,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(right: 45.w),
-                      child: Text(
-                        "Full Name:",
-                        style: AppTextStyles.titleMediumDark
-                            .copyWith(color: AppColors.whiteOpasity),
-                      ),
-                    ),
-                    Text(
-                      "Burak Volkan Coşkun",
-                      style: AppTextStyles.bodyMediumDark
+              padding: AppSpacings.sL15,
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(right: 45.w),
+                    child: Text(
+                      "Full Name:",
+                      style: AppTextStyles.titleMediumDark
                           .copyWith(color: AppColors.whiteOpasity),
-                    )
-                  ],
-                ),
+                    ),
+                  ),
+                  Text(
+                    "Burak Volkan Coşkun",
+                    style: AppTextStyles.bodyMediumDark
+                        .copyWith(color: AppColors.whiteOpasity),
+                  )
+                ],
               ),
             ),
             //this row is Password

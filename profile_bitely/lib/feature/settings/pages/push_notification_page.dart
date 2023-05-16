@@ -31,84 +31,78 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
             },
           ),
           SizedBox(height: 50.h),
-          SizedBox(
+          Container(
             height: 65.h,
-            child: Padding(
-              padding: AppSpacings.sL15,
-              child: Row(
-                children: [
-                  const TitleWithText(
-                    text: AppTexts.getReminders,
-                    title: AppTexts.morningLearning,
-                  ),
-                  Switch(
-                    inactiveThumbColor: AppColors.profileBlackLight,
-                    inactiveTrackColor: AppColors.blackLight,
-                    activeTrackColor: AppColors.blackLight,
-                    activeColor: AppColors.greenLight,
-                    value: morningIsSwicthed,
-                    onChanged: (value) {
-                      setState(() {
-                        morningIsSwicthed = value;
-                      });
-                    },
-                  )
-                ],
-              ),
+            padding: AppSpacings.sL15,
+            child: Row(
+              children: [
+                const TitleWithText(
+                  text: AppTexts.getReminders,
+                  title: AppTexts.morningLearning,
+                ),
+                Switch(
+                  inactiveThumbColor: AppColors.profileBlackLight,
+                  inactiveTrackColor: AppColors.blackLight,
+                  activeTrackColor: AppColors.blackLight,
+                  activeColor: AppColors.greenLight,
+                  value: morningIsSwicthed,
+                  onChanged: (value) {
+                    setState(() {
+                      morningIsSwicthed = value;
+                    });
+                  },
+                )
+              ],
             ),
           ),
-          SizedBox(height: 40.h),
-          SizedBox(
+          SizedBox(height: 25.h),
+          Container(
             height: 65.h,
-            child: Padding(
-              padding: AppSpacings.sL15,
-              child: Row(
-                children: [
-                  const TitleWithText(
-                    title: AppTexts.stayingOnTrack,
-                    text: AppTexts.rememberToHit,
-                  ),
-                  Switch(
-                    inactiveThumbColor: AppColors.profileBlackLight,
-                    inactiveTrackColor: AppColors.blackLight,
-                    activeTrackColor: AppColors.blackLight,
-                    activeColor: AppColors.greenLight,
-                    value: stayingIsSwicthed,
-                    onChanged: (value) {
-                      setState(() {
-                        stayingIsSwicthed = value;
-                      });
-                    },
-                  )
-                ],
-              ),
+            padding: AppSpacings.sL15,
+            child: Row(
+              children: [
+                const TitleWithText(
+                  title: AppTexts.stayingOnTrack,
+                  text: AppTexts.rememberToHit,
+                ),
+                Switch(
+                  inactiveThumbColor: AppColors.profileBlackLight,
+                  inactiveTrackColor: AppColors.blackLight,
+                  activeTrackColor: AppColors.blackLight,
+                  activeColor: AppColors.greenLight,
+                  value: stayingIsSwicthed,
+                  onChanged: (value) {
+                    setState(() {
+                      stayingIsSwicthed = value;
+                    });
+                  },
+                )
+              ],
             ),
           ),
-          SizedBox(height: 40.h),
-          SizedBox(
+          SizedBox(height: 25.h),
+          Container(
             height: 65.h,
-            child: Padding(
-              padding: AppSpacings.sL15,
-              child: Row(
-                children: [
-                  const TitleWithText(
-                    title: AppTexts.upToDate,
-                    text: AppTexts.weWillRecommend,
-                  ),
-                  Switch(
-                    inactiveThumbColor: AppColors.profileBlackLight,
-                    inactiveTrackColor: AppColors.blackLight,
-                    activeTrackColor: AppColors.blackLight,
-                    activeColor: AppColors.greenLight,
-                    value: upIsSwicthed,
-                    onChanged: (value) {
-                      setState(() {
-                        upIsSwicthed = value;
-                      });
-                    },
-                  )
-                ],
-              ),
+            padding: AppSpacings.sL15,
+            child: Row(
+              children: [
+                const TitleWithText(
+                  title: AppTexts.upToDate,
+                  text: AppTexts.weWillRecommend,
+                ),
+                Switch(
+                  inactiveThumbColor: AppColors.profileBlackLight,
+                  inactiveTrackColor: AppColors.blackLight,
+                  activeTrackColor: AppColors.blackLight,
+                  activeColor: AppColors.greenLight,
+                  value: upIsSwicthed,
+                  onChanged: (value) {
+                    setState(() {
+                      upIsSwicthed = value;
+                    });
+                  },
+                )
+              ],
             ),
           )
         ],
