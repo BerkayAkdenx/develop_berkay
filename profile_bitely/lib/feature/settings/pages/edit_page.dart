@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
-import 'package:profile_bitely/core/Global/Resources/app_images.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
 import 'package:profile_bitely/feature/settings/widgets/appbar_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
+import 'package:profile_bitely/feature/settings/widgets/image_widget.dart';
 
 class EditPage extends StatelessWidget {
   const EditPage({super.key});
@@ -29,21 +29,8 @@ class EditPage extends StatelessWidget {
             ),
 
             // this row for profile image
-            Column(
-              children: [
-                SizedBox(height: 40.h),
-                Image.asset(
-                  AppImages.settingsProfile,
-                  scale: 0.8,
-                ),
-                Padding(
-                  padding: AppSpacings.sAll20,
-                  child: Text(
-                    "İrem Nur Erenel",
-                    style: AppTextStyles.headlineLargeDark,
-                  ),
-                )
-              ],
+            const ImageWidget(
+              text: "İrem Nur Erenel",
             ),
             SizedBox(height: 50.h),
             // this row is email
