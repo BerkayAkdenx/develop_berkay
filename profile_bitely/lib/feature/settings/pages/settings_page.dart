@@ -51,7 +51,7 @@ class SettingPage extends StatelessWidget {
             onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const EditPage(),
+                  builder: (context) => EditPage(),
                 )),
           ),
           // this row for Billing Details
