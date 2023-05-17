@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_images.dart';
 import 'package:profile_bitely/core/Global/Resources/app_radiuses.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
@@ -34,7 +35,7 @@ class ProfileGetPremiumWidget extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      AppTexts.getPremium,
+                      AppTexts.getPremium.tr,
                       style: AppTextStyles.headlineLargeLight,
                     ),
                   ],
@@ -43,7 +44,7 @@ class ProfileGetPremiumWidget extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      AppTexts.subscribeNowSevenDays,
+                      AppTexts.subscribeNowSevenDays.tr,
                       style: AppTextStyles.bodyMediumLight,
                     ),
                   ],

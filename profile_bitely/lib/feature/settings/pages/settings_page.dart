@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
@@ -26,13 +27,14 @@ class SettingPage extends StatelessWidget {
             child: Row(
               children: [
                 IconButton(
-                    onPressed: () => print("clicked  the back button"),
-                    icon: const Icon(
-                      Icons.arrow_back_ios,
-                      color: Colors.white,
-                    )),
+                  onPressed: () => print("clicked  the back button"),
+                  icon: const Icon(
+                    Icons.arrow_back_ios,
+                    color: Colors.white,
+                  ),
+                ),
                 Text(
-                  AppTexts.appbarSettings,
+                  AppTexts.appbarSettings.tr,
                   style: AppTextStyles.headlineLargeDark,
                 )
               ],
@@ -43,10 +45,10 @@ class SettingPage extends StatelessWidget {
             text: "İrem Nur Erenel",
           ),
           //this row for account
-          const ClicklessContainerWidget(text: AppTexts.account),
+          ClicklessContainerWidget(text: AppTexts.account.tr),
           // this row for Edit Profile
           ClickableContainerWidget(
-            text: AppTexts.editProfile,
+            text: AppTexts.editProfile.tr,
             // go to edit profile page
             onPressed: () => Navigator.push(
                 context,
@@ -56,16 +58,16 @@ class SettingPage extends StatelessWidget {
           ),
           // this row for Billing Details
           ClickableContainerWidget(
-            text: AppTexts.billingDetails,
+            text: AppTexts.billingDetails.tr,
             onPressed: () => print("go to edit Billing Detail page"),
           ),
           // this row for Preferences
-          const ClicklessContainerWidget(
-            text: AppTexts.preferences,
+          ClicklessContainerWidget(
+            text: AppTexts.preferences.tr,
           ),
           // this row for Notifications
           ClickableContainerWidget(
-            text: AppTexts.notifications,
+            text: AppTexts.notifications.tr,
             // go to  notifications page
             onPressed: () => Navigator.push(
                 context,
@@ -75,41 +77,41 @@ class SettingPage extends StatelessWidget {
           ),
           // this row for Language
           ClickableContainerWidget(
-            text: AppTexts.appLanguage,
+            text: AppTexts.appLanguage.tr,
             onPressed: () => print("go to edit Language page"),
           ),
 
           // this row for about
           SizedBox(height: 20.h),
-          const ClicklessContainerWidget(
-            text: AppTexts.about,
+          ClicklessContainerWidget(
+            text: AppTexts.about.tr,
           ),
           //this row for About Bitely
           ClickableContainerWidget(
-            text: AppTexts.aboutBitely,
+            text: AppTexts.aboutBitely.tr,
             isExternal: true,
             onPressed: () => print("go to edit About Bitely page"),
           ),
           // this row for Give Us Feedback
           ClickableContainerWidget(
-              text: AppTexts.giveUsFeedback,
+              text: AppTexts.giveUsFeedback.tr,
               onPressed: () => print("go to edit giveUsFeedback page")),
           // this row for Request Content
           ClickableContainerWidget(
-              text: AppTexts.requestContent,
+              text: AppTexts.requestContent.tr,
               onPressed: () => print("go to edit Request Content page")),
           // this row for Contact Us
           ClickableContainerWidget(
-              text: AppTexts.contactUs,
+              text: AppTexts.contactUs.tr,
               onPressed: () => print("go to edit Contact Us page")),
           // this row for Privacy policy
           ClickableContainerWidget(
-              text: AppTexts.privacyPolicy,
+              text: AppTexts.privacyPolicy.tr,
               isExternal: true,
               onPressed: () => print("go to edit Privacy policy page")),
           // this row for Terms and  conditions
           ClickableContainerWidget(
-              text: AppTexts.termsAndConditions,
+              text: AppTexts.termsAndConditions.tr,
               isExternal: true,
               onPressed: () => print("go to edit Terms and  conditions page")),
           SizedBox(
@@ -117,8 +119,9 @@ class SettingPage extends StatelessWidget {
           ),
           // this row for sign out button
           BaseButtonWidget(
-              onPressed: () => print("clicked sing out"),
-              text: AppTexts.buttonsingOut),
+            onPressed: () => print("clicked sing out"),
+            text: AppTexts.buttonsingOut.tr,
+          ),
           SizedBox(
             height: 50.h,
           ),

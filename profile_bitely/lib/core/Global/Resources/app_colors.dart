@@ -15,6 +15,7 @@ class AppColors {
   static const tertiaryDark = Color(0xffFFA000);
   static const onTertiaryDark = Color(0xffFF0050);
   static const onTertiaryLight = Color(0xffFF0050);
+  static const redDanger = Color(0xffD11515);
   static const background = Colors.white;
   static const white = Colors.white;
   static const black = Colors.black;

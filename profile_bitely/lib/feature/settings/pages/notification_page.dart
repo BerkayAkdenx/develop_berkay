@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
 import 'package:profile_bitely/feature/settings/pages/push_notification_page.dart';
@@ -17,14 +18,13 @@ class NotificationPage extends StatelessWidget {
         children: [
           //this row for appbar
           AppbarWidget(
-            title: AppTexts.notifications,
+            title: AppTexts.notifications.tr,
             saveActive: false,
-            onpressedForSave: () {},
           ),
           SizedBox(height: 50.h),
           // this row for push notification
           ClickableContainerWidget(
-            text: AppTexts.pushNotification,
+            text: AppTexts.pushNotification.tr,
             onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(

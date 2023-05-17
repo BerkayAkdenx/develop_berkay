@@ -3,10 +3,12 @@ abstract class AppTexts {
       "welcome"; //silinecek, proje dışı kontrol amaclı kullandık
   // base start
   static const close = "close";
+  static const save = "save";
   static const buttonDone = "buttonDone";
   static const verifyAccount = "verifyAccount";
 
   static const bitely = "bitely";
+  static const billingDetails = "billingDetails";
   static const welcomeToBitely = "welcomeToBitely";
   static const learnFifteen = "learnFifteen";
   static const alreadyHaveAccount = "alreadyHaveAccount";
@@ -80,13 +82,14 @@ abstract class AppTexts {
   static const search = "search";
   static const dailyBites = "dailyBites";
   static const library = "library";
-  static const profile = "Profile";
+  static const profile = "profile";
   static const addToBitelist = "addToBitelist";
+  static const addToContentList = "addToContentList";
   static const like = "like";
   static const remindMe = "remindMe";
   static const share = "share";
   static const seeMore = "seeMore";
-  static const seeAll = "See All";
+  static const seeAll = "seeAll";
   static const bites = "Bites";
   static const page = "page";
   static const of = "of";
@@ -99,48 +102,43 @@ abstract class AppTexts {
   static const or = "or";
   static const goodMorning = "goodMorning";
   static const goodNight = "goodNight";
-  static const editProfile = "Edit Profile";
-  static const billingDetails = "Billing Details";
-  static const challenges = "Challenges";
-  static const likes = "Likes";
+  static const editProfile = "editProfile";
+  static const challenges = "challenges";
+  static const likes = "likes";
   static const bitelist = "bitelist";
   static const bookmarks = "bookmarks";
-  static const finished = "Finished";
+  static const finished = "finished";
   static const youHaventStarted = "youHaventStarted";
-  static const paymentFailed = "Payment failed.";
-  static const weAreUnable =
-      "We are unable to charge your credit card.\n To keep Premium, update your payment\n details.";
+  static const paymentFailed = "paymentFailed";
+  static const weAreUnable = "weAreUnable";
   static const orYouCanStart = "orYouCanStart";
-  static const getPremium = "Get Premium";
-  static const subscribeNowSevenDays = "Subscribe now and try 7 days for free";
-  static const account = "Account";
-  static const preferences = "Preferences";
-  static const notifications = "Notifications";
-  static const about = "About";
-  static const aboutBitely = "About Bitely";
-  static const giveUsFeedback = "Give Us Feedback";
-  static const requestContent = "Request Content";
-  static const contactUs = "Contact Us";
-  static const privacyPolicy = "Privacy Policy";
-  static const termsAndConditions = "Terms And Conditions";
+  static const getPremium = "getPremium";
+  static const subscribeNowSevenDays = "subscribeNowSevenDays";
+  static const account = "account";
+  static const preferences = "preferences";
+  static const notifications = "notifications";
+  static const about = "about";
+  static const aboutBitely = "aboutBitely";
+  static const giveUsFeedback = "giveUsFeedback";
+  static const requestContent = "requestContent";
+  static const contactUs = "contactUs";
+  static const privacyPolicy = "privacyPolicy";
+  static const termsAndConditions = "termsAndConditions";
   static const fullName = "fullName";
   static const username = "username";
   static const thinksYouLike = "thinksYouLike";
-  static const pushNotification = "Push Notifications";
+  static const pushNotification = "pushNotification";
   static const dailyReminder = "dailyReminder";
   static const personalReminders = "personalReminders";
   static const thingsYouSaved = "thingsYouSaved";
   static const updateOffers = "updateOffers";
-  static const morningLearning = "Morning Learning";
+  static const morningLearning = "morningLearning";
   static const youCanChooseMultipleFor = "youCanChooseMultipleFor";
-  static const stayingOnTrack = "Staying on Track";
-  static const getReminders =
-      "Get reminders to revise book ideas and get inspired by daily insights. ";
-  static const upToDate = "Up to date";
-  static const weWillRecommend =
-      "We’ll recommend you new gems based on your interest.";
-  static const rememberToHit =
-      "Remember to hit your daily reading goal and never lose your streak.";
+  static const stayingOnTrack = "stayingOnTrack";
+  static const getReminders = "getReminders";
+  static const upToDate = "upToDate";
+  static const weWillRecommend = "weWillRecommend";
+  static const rememberToHit = "rememberToHit";
   static const weAreSorry = "weAreSorry";
   static const pleaseShareTheReason = "pleaseShareTheReason";
   static const costRelatedReasons = "costRelatedReasons";
@@ -148,7 +146,7 @@ abstract class AppTexts {
   static const iFoundABetter = "iFoundABetter";
   static const technicalIssues = "technicalIssues";
   static const notNow = "notNow";
-  static const appLanguage = "Language";
+  static const appLanguage = "appLanguage";
   static const contentLanguage = "contentLanguage";
   static const letUsKnow = "letUsKnow";
   static const subject = "subject";
@@ -186,9 +184,9 @@ abstract class AppTexts {
   static const enjoyYourBooks = "enjoyYourBooks";
   static const continueYour = "continueYour";
   static const adFree = "adFree";
-  static const buttonDeleteMyAccount = "Delete Account";
+  static const buttonDeleteMyAccount = "buttonDeleteMyAccount";
   static const min = "min";
-  static const preview = "preview";
+  static const preview = "Preview";
 
   // base end
   // buttons start
@@ -204,7 +202,7 @@ abstract class AppTexts {
   static const buttonIWantToPick = "buttonIWantToPick";
   static const buttonIdLikeToSee = "buttonIdLikeToSee";
   static const buttonDiscover = "buttonDiscover";
-  static const buttonsingOut = "Sing Out";
+  static const buttonsingOut = "buttonsingOut";
   static const buttonExplore = "buttonExplore";
   static const buttonChooseYourPlan = "buttonChooseYourPlan";
   static const buttonStartMyFree = "buttonStartMyFree";
@@ -216,7 +214,7 @@ abstract class AppTexts {
   static const appbarReferralCode = "appbarReferralCode";
   static const appbarCreateAnAccount = "appbarCreateAnAccount";
   static const appbarForgotPassword = "appbarForgotPassword";
-  static const appbarMainGoal = "Main Goal";
+  static const appbarMainGoal = "appbarMainGoal";
   static const appbarCategories = "appbarCategories";
   static const appbarLanguage = "appbarLanguage";
   static const appbarGender = "appbarGender";
@@ -224,7 +222,7 @@ abstract class AppTexts {
   static const appbarLearningPath = "appbarLearningPath";
   static const appbarInterestedInContent = "appbarInterestedInContent";
   static const appbarProfile = "appbarProfile";
-  static const appbarSettings = "Settings";
+  static const appbarSettings = "appbarSettings";
   static const appbarNotification = "appbarNotification";
   static const appbarPushNotification = "appbarPushNotification";
   static const appbarDeleteAccount = "appbarDeleteAccount";
@@ -232,13 +230,13 @@ abstract class AppTexts {
   static const appbarRequestContent = "appbarRequestContent";
   static const appbarContactUs = "appbarContactUs";
   static const appbarChangePassword = "appbarChangePassword";
-  static const appbarTrainingPace = "Training Pace";
+  static const appbarTrainingPace = "appbarTrainingPace";
 
   // appbar end
   // label start
   static const name = "name";
   static const email = "email";
-  static const password = "Password";
+  static const password = "password";
   static const enterName = "enterName";
   static const enterEmailAddress = "enterEmailAddress";
   static const confirmPassword = "confirmPassword";
@@ -262,16 +260,15 @@ abstract class AppTexts {
 
   // richtext end
 // title start
-  static const keepReading = "Keep Reading";
+  static const keepReading = "keepReading";
   static const trendingNow = "trendingNow";
   static const collectionsOFTwothousand = "collectionsOFTwothousand";
   static const forYou = "forYou";
-  static const save = "SAVE";
   static const description = "description";
   static const allBites = "allBites";
   static const insight = "insight";
   static const yourTopCategories = "yourTopCategories";
-  static const categories = "Categories";
+  static const categories = "categories";
   static const recentSearches = "recentSearches";
   static const dailyBitesSpacely = "dailyBitesSpacely";
   static const activities = "activities";
@@ -281,8 +278,10 @@ abstract class AppTexts {
 
 // title end
 
-  static const passwordRegex =
+  static const passwordRegexIncludeSpecial =
       r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$';
+
+  static const passwordRegex = r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$';
 
   //sign un , sign up error
   static const userExists = "An account with the given email already exists.";

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_images.dart';
 import 'package:profile_bitely/core/Global/Resources/app_radiuses.dart';
@@ -31,7 +32,7 @@ class PaymentFailedWidget extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Text(AppTexts.paymentFailed,
+                  Text(AppTexts.paymentFailed.tr,
                       style: AppTextStyles.titleLargeDark),
                 ],
               ),
@@ -40,7 +41,7 @@ class PaymentFailedWidget extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      AppTexts.weAreUnable,
+                      AppTexts.weAreUnable.tr,
                       style:
                           AppTextStyles.bodySmallDark.copyWith(fontSize: 10.sp),
                     ),

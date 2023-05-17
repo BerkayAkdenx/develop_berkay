@@ -10,9 +10,13 @@ class BaseButtonWidget extends StatelessWidget {
     super.key,
     required this.text,
     required this.onPressed,
+    this.color = AppColors.secondaryDark,
+    this.textcolor,
   });
   final String text;
   final VoidCallback onPressed;
+  final Color color;
+  final Color? textcolor;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -20,12 +24,13 @@ class BaseButtonWidget extends StatelessWidget {
       style: ElevatedButton.styleFrom(
           padding:
               AppSpacings.sSymmetricH50V20.copyWith(right: 60.w, left: 60.w),
-          backgroundColor: AppColors.secondaryDark,
+          backgroundColor: color,
           shape: RoundedRectangleBorder(borderRadius: AppRadiuses.radiusAll50)),
       child: Text(
         text,
-        style:
-            AppTextStyles.bodySmallLight.copyWith(fontWeight: FontWeight.bold),
+        style: AppTextStyles.bodyMediumLight
+            .copyWith(fontWeight: FontWeight.bold)
+            .copyWith(color: textcolor),
       ),
     );
   }

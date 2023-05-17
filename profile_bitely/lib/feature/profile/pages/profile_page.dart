@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_images.dart';
 import 'package:profile_bitely/core/Global/Resources/app_radiuses.dart';
@@ -40,7 +41,7 @@ class ProfilePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    AppTexts.profile,
+                    AppTexts.profile.tr,
                     style: AppTextStyles.headlineLargeDark,
                   ),
                   GestureDetector(
@@ -81,7 +82,7 @@ class ProfilePage extends StatelessWidget {
                             Padding(
                               padding: AppSpacings.sSymmetricV8,
                               child: Text(
-                                AppTexts.editProfile,
+                                AppTexts.editProfile..tr,
                                 style: AppTextStyles.bodySmallDark.copyWith(
                                     color: AppColors.profileBlackLight),
                               ),
@@ -100,14 +101,15 @@ class ProfilePage extends StatelessWidget {
               padding: AppSpacings.sSymmetricH30,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: const [
+                children: [
                   ProfilePageColumnWidget(
                     num: "134",
-                    text: AppTexts.bites,
+                    text: AppTexts.bites.tr,
                   ),
-                  ProfilePageColumnWidget(num: "0", text: AppTexts.challenges),
-                  ProfilePageColumnWidget(num: "158", text: AppTexts.likes),
-                  ProfilePageColumnWidget(num: "34", text: AppTexts.finished)
+                  ProfilePageColumnWidget(
+                      num: "0", text: AppTexts.challenges.tr),
+                  ProfilePageColumnWidget(num: "158", text: AppTexts.likes.tr),
+                  ProfilePageColumnWidget(num: "34", text: AppTexts.finished.tr)
                 ],
               ),
             ),
@@ -116,9 +118,9 @@ class ProfilePage extends StatelessWidget {
               height: 31.h,
             ),
             //this row for get Premium
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [ProfileGetPremiumWidget()],
+              children: [ProfileGetPremiumWidget()],
             ),
             SizedBox(height: 25.h),
             //this row for Keep Reading
@@ -127,11 +129,11 @@ class ProfilePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(AppTexts.keepReading,
+                  Text(AppTexts.keepReading.tr,
                       style: AppTextStyles.headlineLargeDark),
                   InkWell(
                     child: Text(
-                      AppTexts.seeAll,
+                      AppTexts.seeAll.tr,
                       style: AppTextStyles.bodySmallDark,
                     ),
                     // ignore: avoid_print

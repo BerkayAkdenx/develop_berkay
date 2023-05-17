@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
@@ -24,7 +25,7 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
       body: Column(
         children: [
           AppbarWidget(
-            title: AppTexts.pushNotification,
+            title: AppTexts.pushNotification.tr,
             saveActive: true,
             onpressedForSave: () {
               print("clicked save button");
@@ -36,9 +37,9 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
             padding: AppSpacings.sL15,
             child: Row(
               children: [
-                const TitleWithText(
-                  text: AppTexts.getReminders,
-                  title: AppTexts.morningLearning,
+                TitleWithText(
+                  text: AppTexts.getReminders.tr,
+                  title: AppTexts.morningLearning.tr,
                 ),
                 Switch(
                   inactiveThumbColor: AppColors.profileBlackLight,
@@ -61,9 +62,9 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
             padding: AppSpacings.sL15,
             child: Row(
               children: [
-                const TitleWithText(
-                  title: AppTexts.stayingOnTrack,
-                  text: AppTexts.rememberToHit,
+                TitleWithText(
+                  title: AppTexts.stayingOnTrack.tr,
+                  text: AppTexts.rememberToHit.tr,
                 ),
                 Switch(
                   inactiveThumbColor: AppColors.profileBlackLight,
@@ -86,9 +87,9 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
             padding: AppSpacings.sL15,
             child: Row(
               children: [
-                const TitleWithText(
-                  title: AppTexts.upToDate,
-                  text: AppTexts.weWillRecommend,
+                TitleWithText(
+                  title: AppTexts.upToDate.tr,
+                  text: AppTexts.weWillRecommend.tr,
                 ),
                 Switch(
                   inactiveThumbColor: AppColors.profileBlackLight,

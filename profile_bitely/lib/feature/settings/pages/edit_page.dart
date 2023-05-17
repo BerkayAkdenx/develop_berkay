@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
 import 'package:profile_bitely/feature/settings/controller/edit_page_controller.dart';
+import 'package:profile_bitely/feature/settings/pages/delete_account_page.dart';
 import 'package:profile_bitely/feature/settings/widgets/appbar_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
@@ -23,7 +24,7 @@ class EditPage extends StatelessWidget {
           children: [
             //this row for appbar
             AppbarWidget(
-              title: AppTexts.editProfile,
+              title: AppTexts.editProfile.tr,
               saveActive: true,
               onpressedForSave: () {
                 print("clicked save button");
@@ -48,7 +49,7 @@ class EditPage extends StatelessWidget {
             ),
             //this row is Password
             ClickableContainerWidget(
-              text: AppTexts.password,
+              text: AppTexts.password.tr,
               onPressed: () => print(" clicked the Password"),
             ),
             SizedBox(
@@ -56,23 +57,27 @@ class EditPage extends StatelessWidget {
             ),
             //this row is categories
             ClickableContainerWidget(
-              text: AppTexts.categories,
+              text: AppTexts.categories.tr,
               onPressed: () => print(" clicked the categories"),
             ), //this row is Main Goal
             ClickableContainerWidget(
-              text: AppTexts.appbarMainGoal,
+              text: AppTexts.appbarMainGoal.tr,
               onPressed: () => print(" clicked the Main Goal"),
             ), //this row is Training Pace
             ClickableContainerWidget(
-              text: AppTexts.appbarTrainingPace,
+              text: AppTexts.appbarTrainingPace.tr,
               onPressed: () => print(" clicked the Training Pace"),
             ),
             SizedBox(
               height: 200.h,
             ),
             BaseButtonWidget(
-              text: AppTexts.buttonDeleteMyAccount,
-              onPressed: () => print("clicked delete account button "),
+              text: AppTexts.buttonDeleteMyAccount.tr,
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const DeleteAccountPage(),
+                  )),
             ),
             SizedBox(
               height: 50.h,
