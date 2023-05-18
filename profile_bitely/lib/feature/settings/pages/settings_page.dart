@@ -6,6 +6,7 @@ import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
 import 'package:profile_bitely/feature/settings/pages/edit_page.dart';
+import 'package:profile_bitely/feature/settings/pages/feedback_page.dart';
 import 'package:profile_bitely/feature/settings/pages/notification_page.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
@@ -95,7 +96,11 @@ class SettingPage extends StatelessWidget {
           // this row for Give Us Feedback
           ClickableContainerWidget(
               text: AppTexts.giveUsFeedback.tr,
-              onPressed: () => print("go to edit giveUsFeedback page")),
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const FeedbackPage(),
+                  ))),
           // this row for Request Content
           ClickableContainerWidget(
               text: AppTexts.requestContent.tr,
