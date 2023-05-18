@@ -19,11 +19,10 @@ class DeleteAccountPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            AppbarWidget(
-              title: AppTexts.appbarDeleteAccount.tr,
-            ),
+            AppbarWidget(title: AppTexts.appbarDeleteAccount.tr),
             Padding(
-              padding: AppSpacings.sAll16,
+              padding: AppSpacings.sAll16
+                  .copyWith(bottom: 0, right: 16.w, left: 16.w, top: 16.h),
               child: Column(
                 children: [
                   Padding(
@@ -54,22 +53,24 @@ class DeleteAccountPage extends StatelessWidget {
                   ReasonContainerWidget(
                     text: AppTexts.technicalIssues.tr,
                   ),
-                  SizedBox(height: 70.h),
-                  BaseButtonWidget(
-                    text: AppTexts.buttonDeleteMyAccount.tr,
-                    color: AppColors.redDanger,
-                    textcolor: AppColors.white,
-                    onPressed: () {},
+                  Padding(
+                    padding: EdgeInsets.only(top: 27.h),
+                    child: BaseButtonWidget(
+                      text: AppTexts.buttonDeleteMyAccount.tr,
+                      color: AppColors.redDanger,
+                      textcolor: AppColors.white,
+                      onPressed: () {},
+                    ),
                   ),
                   Padding(
-                    padding: AppSpacings.sAll16,
+                    padding: AppSpacings.sAll20.copyWith(bottom: 0),
                     child: InkWell(
                       onTap: () {
                         print("ontap clicked");
                       },
                       child: Text(
                         AppTexts.notNow.tr,
-                        style: AppTextStyles.bodySmallDark
+                        style: AppTextStyles.bodyMediumDark
                             .copyWith(color: Colors.white70),
                       ),
                     ),

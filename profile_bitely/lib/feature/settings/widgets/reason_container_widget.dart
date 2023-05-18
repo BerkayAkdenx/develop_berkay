@@ -15,7 +15,7 @@ class ReasonContainerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: AppSpacings.sB10.copyWith(bottom: 20),
-      padding: AppSpacings.sAll20,
+      padding: AppSpacings.sAll20.copyWith(top: 0, bottom: 0),
       alignment: Alignment.centerLeft,
       decoration: BoxDecoration(
           border: Border.all(
@@ -24,7 +24,7 @@ class ReasonContainerWidget extends StatelessWidget {
           ),
           borderRadius: AppRadiuses.radiusAll12),
       width: double.infinity,
-      height: 60.h,
+      height: 57.h,
       child: Text(
         text,
         style:
