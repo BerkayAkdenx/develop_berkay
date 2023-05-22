@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_radiuses.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
@@ -19,7 +18,7 @@ class BaseButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
-      widthFactor: 0.6.w,
+      widthFactor: 0.6,
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
