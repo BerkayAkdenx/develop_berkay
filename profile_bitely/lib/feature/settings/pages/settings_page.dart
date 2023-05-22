@@ -99,7 +99,7 @@ class SettingPage extends StatelessWidget {
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const FeedbackPage(),
+                    builder: (context) => FeedbackPage(),
                   ))),
           // this row for Request Content
           ClickableContainerWidget(

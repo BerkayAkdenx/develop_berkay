@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_radiuses.dart';
-import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 
 class BaseButtonWidget extends StatelessWidget {
@@ -19,18 +18,21 @@ class BaseButtonWidget extends StatelessWidget {
   final Color? textcolor;
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-          padding:
-              AppSpacings.sSymmetricH50V20.copyWith(right: 60.w, left: 60.w),
-          backgroundColor: color,
-          shape: RoundedRectangleBorder(borderRadius: AppRadiuses.radiusAll50)),
-      child: Text(
-        text,
-        style: AppTextStyles.bodyMediumLight
-            .copyWith(fontWeight: FontWeight.bold)
-            .copyWith(color: textcolor),
+    return FractionallySizedBox(
+      widthFactor: 0.6.w,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+            padding: const EdgeInsets.symmetric(vertical: 15),
+            backgroundColor: color,
+            shape:
+                RoundedRectangleBorder(borderRadius: AppRadiuses.radiusAll50)),
+        child: Text(
+          text,
+          style: AppTextStyles.bodyMediumLight
+              .copyWith(fontWeight: FontWeight.bold)
+              .copyWith(color: textcolor),
+        ),
       ),
     );
   }
