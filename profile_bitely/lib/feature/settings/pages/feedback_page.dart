@@ -6,6 +6,7 @@ import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
 import 'package:profile_bitely/feature/settings/widgets/appbar_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 
+// ignore: must_be_immutable
 class FeedbackPage extends StatelessWidget {
   FeedbackPage({super.key});
   TextEditingController feedbackController = TextEditingController();

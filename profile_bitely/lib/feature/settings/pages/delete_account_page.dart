@@ -42,15 +42,19 @@ class DeleteAccountPage extends StatelessWidget {
                   ),
                   SizedBox(height: 33.h),
                   ReasonContainerWidget(
+                    onpressed: () => print("clicked"),
                     text: AppTexts.costRelatedReasons.tr,
                   ),
                   ReasonContainerWidget(
+                    onpressed: () => print("clicked"),
                     text: AppTexts.iDontUse.tr,
                   ),
                   ReasonContainerWidget(
+                    onpressed: () => print("clicked"),
                     text: AppTexts.iFoundABetter.tr,
                   ),
                   ReasonContainerWidget(
+                    onpressed: () => print("clicked"),
                     text: AppTexts.technicalIssues.tr,
                   ),
                   Padding(
@@ -59,7 +63,9 @@ class DeleteAccountPage extends StatelessWidget {
                       text: AppTexts.buttonDeleteMyAccount.tr,
                       color: AppColors.redDanger,
                       textcolor: AppColors.white,
-                      onPressed: () {},
+                      onPressed: () {
+                        print("deleted account");
+                      },
                     ),
                   ),
                   Padding(
