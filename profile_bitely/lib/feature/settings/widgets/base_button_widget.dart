@@ -18,7 +18,7 @@ class BaseButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
-      widthFactor: 0.6,
+      widthFactor: 0.7,
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(

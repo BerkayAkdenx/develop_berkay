@@ -9,8 +9,18 @@ import 'package:profile_bitely/feature/settings/widgets/appbar_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/reason_container_widget.dart';
 
-class DeleteAccountPage extends StatelessWidget {
+class DeleteAccountPage extends StatefulWidget {
   const DeleteAccountPage({super.key});
+
+  @override
+  State<DeleteAccountPage> createState() => _DeleteAccountPageState();
+}
+
+class _DeleteAccountPageState extends State<DeleteAccountPage> {
+  bool ispressedCost = false;
+  bool ispressedIDont = false;
+  bool ispressedIFound = false;
+  bool ispressedTechnical = false;
 
   @override
   Widget build(BuildContext context) {
@@ -42,19 +52,39 @@ class DeleteAccountPage extends StatelessWidget {
                   ),
                   SizedBox(height: 33.h),
                   ReasonContainerWidget(
-                    onpressed: () => print("clicked"),
+                    onpressed: () {
+                      setState(() {
+                        ispressedCost = !ispressedCost;
+                      });
+                    },
+                    enable: ispressedCost,
                     text: AppTexts.costRelatedReasons.tr,
                   ),
                   ReasonContainerWidget(
-                    onpressed: () => print("clicked"),
+                    onpressed: () {
+                      setState(() {
+                        ispressedIDont = !ispressedIDont;
+                      });
+                    },
+                    enable: ispressedIDont,
                     text: AppTexts.iDontUse.tr,
                   ),
                   ReasonContainerWidget(
-                    onpressed: () => print("clicked"),
+                    onpressed: () {
+                      setState(() {
+                        ispressedIFound = !ispressedIFound;
+                      });
+                    },
+                    enable: ispressedIFound,
                     text: AppTexts.iFoundABetter.tr,
                   ),
                   ReasonContainerWidget(
-                    onpressed: () => print("clicked"),
+                    onpressed: () {
+                      setState(() {
+                        ispressedTechnical = !ispressedTechnical;
+                      });
+                    },
+                    enable: ispressedTechnical,
                     text: AppTexts.technicalIssues.tr,
                   ),
                   Padding(
