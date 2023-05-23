@@ -7,12 +7,12 @@ class BaseButtonWidget extends StatelessWidget {
   const BaseButtonWidget({
     super.key,
     required this.text,
-    required this.onPressed,
+    this.onPressed,
     this.color = AppColors.secondaryDark,
     this.textcolor,
   });
   final String text;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final Color color;
   final Color? textcolor;
   @override
@@ -22,6 +22,7 @@ class BaseButtonWidget extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
+            disabledBackgroundColor: AppColors.secondaryDark.withOpacity(0.3),
             padding: const EdgeInsets.symmetric(vertical: 15),
             backgroundColor: color,
             shape:

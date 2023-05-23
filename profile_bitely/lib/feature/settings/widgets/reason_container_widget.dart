@@ -26,26 +26,35 @@ class _ReasonContainerWidgetState extends State<ReasonContainerWidget> {
   Widget build(BuildContext context) {
     return Padding(
       padding: AppSpacings.sB10.copyWith(bottom: 20.h),
-      child: InkWell(
-        onTap: widget.onpressed,
-        child: Container(
-          padding: AppSpacings.sAll20.copyWith(top: 0, bottom: 0),
-          alignment: Alignment.centerLeft,
-          decoration: BoxDecoration(
-              color: widget.enable ? const Color(0xFFFF4949) : null,
-              border: widget.enable
-                  ? null
-                  : Border.all(
-                      color: AppColors.white,
-                      width: 2,
-                    ),
-              borderRadius: AppRadiuses.radiusAll12),
-          width: double.infinity,
-          height: 57.h,
-          child: Text(
-            widget.text,
-            style: AppTextStyles.titleSmallDark
-                .copyWith(fontWeight: FontWeight.bold),
+      child: Container(
+        decoration: BoxDecoration(
+            color: widget.enable ? const Color(0xFFFF4949) : null,
+            border: widget.enable
+                ? Border.all(
+                    color: Colors.transparent,
+                    width: 2,
+                  )
+                : Border.all(
+                    color: AppColors.white,
+                    width: 2,
+                  ),
+            borderRadius: AppRadiuses.radiusAll12),
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            borderRadius: AppRadiuses.radiusAll12,
+            onTap: widget.onpressed,
+            child: Container(
+              padding: AppSpacings.sAll20.copyWith(top: 0, bottom: 0),
+              alignment: Alignment.centerLeft,
+              width: double.infinity,
+              height: 57.h,
+              child: Text(
+                widget.text,
+                style: AppTextStyles.titleSmallDark
+                    .copyWith(fontWeight: FontWeight.bold),
+              ),
+            ),
           ),
         ),
       ),
