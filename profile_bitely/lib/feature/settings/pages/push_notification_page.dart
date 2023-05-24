@@ -111,5 +111,5 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
     );
   }
 
-  // i didnt get extract widget
+  // i didnt get extract widget for switch
 }

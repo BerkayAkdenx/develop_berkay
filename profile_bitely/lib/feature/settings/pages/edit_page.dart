@@ -4,16 +4,15 @@ import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
 import 'package:profile_bitely/feature/settings/controller/edit_page_controller.dart';
-import 'package:profile_bitely/feature/settings/pages/delete_account_page.dart';
+import 'package:profile_bitely/feature/settings/routes/routes.dart';
 import 'package:profile_bitely/feature/settings/widgets/appbar_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/editable_field_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/image_widget.dart';
 
-class EditPage extends StatelessWidget {
-  EditPage({super.key});
-  final EditPageController _editPageController = Get.put(EditPageController());
+class EditPage extends GetView<EditPageController> {
+  const EditPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,12 +38,12 @@ class EditPage extends StatelessWidget {
             // this row is email
 
             EditableFieldWidget(
-              controller: _editPageController.emailController,
+              controller: controller.emailController,
               isEmail: true,
             ),
             // this row is Full name
             EditableFieldWidget(
-              controller: _editPageController.fullNameController,
+              controller: controller.fullNameController,
               isEmail: false, // full name getting
             ),
             //this row is Password
@@ -72,13 +71,8 @@ class EditPage extends StatelessWidget {
               height: 200.h,
             ),
             BaseButtonWidget(
-              text: AppTexts.buttonDeleteMyAccount.tr,
-              onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const DeleteAccountPage(),
-                  )),
-            ),
+                text: AppTexts.buttonDeleteMyAccount.tr,
+                onPressed: () => Get.toNamed(Routes.DELETE_ACCOUNT_PAGE)),
             SizedBox(
               height: 50.h,
             ),

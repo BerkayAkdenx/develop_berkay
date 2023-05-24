@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:profile_bitely/feature/settings/controller/base_controller.dart';
 
-class EditPageController extends GetxController {
+class EditPageController extends BaseController {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController fullNameController = TextEditingController();
   final String email = "erenaksoyyy@gmail.com";

@@ -5,9 +5,7 @@ import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
-import 'package:profile_bitely/feature/settings/pages/edit_page.dart';
-import 'package:profile_bitely/feature/settings/pages/feedback_page.dart';
-import 'package:profile_bitely/feature/settings/pages/notification_page.dart';
+import 'package:profile_bitely/feature/settings/routes/routes.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickless_container_widget.dart';
@@ -49,14 +47,9 @@ class SettingPage extends StatelessWidget {
           ClicklessContainerWidget(text: AppTexts.account.tr),
           // this row for Edit Profile
           ClickableContainerWidget(
-            text: AppTexts.editProfile.tr,
-            // go to edit profile page
-            onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => EditPage(),
-                )),
-          ),
+              text: AppTexts.editProfile.tr,
+              // go to edit profile page
+              onPressed: () => Get.toNamed(Routes.EDIT_PAGE)),
           // this row for Billing Details
           ClickableContainerWidget(
             text: AppTexts.billingDetails.tr,
@@ -68,14 +61,9 @@ class SettingPage extends StatelessWidget {
           ),
           // this row for Notifications
           ClickableContainerWidget(
-            text: AppTexts.notifications.tr,
-            // go to  notifications page
-            onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const NotificationPage(),
-                )),
-          ),
+              text: AppTexts.notifications.tr,
+              // go to  notifications page
+              onPressed: () => Get.toNamed(Routes.NOTIFICATION_PAGE)),
           // this row for Language
           ClickableContainerWidget(
             text: AppTexts.appLanguage.tr,
@@ -96,11 +84,7 @@ class SettingPage extends StatelessWidget {
           // this row for Give Us Feedback
           ClickableContainerWidget(
               text: AppTexts.giveUsFeedback.tr,
-              onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => FeedbackPage(),
-                  ))),
+              onPressed: () => Get.toNamed(Routes.FEEDBACK_PAGE)),
           // this row for Request Content
           ClickableContainerWidget(
               text: AppTexts.requestContent.tr,

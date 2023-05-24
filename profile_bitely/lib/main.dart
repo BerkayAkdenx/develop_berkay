@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_translates.dart';
 import 'package:profile_bitely/feature/settings/pages/settings_page.dart';
+import 'package:profile_bitely/feature/settings/routes/pages.dart';
+import 'package:profile_bitely/feature/settings/routes/routes.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,6 +18,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Material App',
         locale: const Locale("en"),
+        getPages: Pages.pages,
+        initialRoute: Routes.SETTINGS_PAGE,
         translations: AppTranslations(),
         home: const SettingPage(),
       ),
