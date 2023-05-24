@@ -1,13 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/controller/profile_page_controller.dart';
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends GetView<ProfilePageController> {
   const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton:
+          FloatingActionButton(onPressed: () => controller.getData()),
       body: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -17,7 +20,9 @@ class ProfilePage extends StatelessWidget {
             height: 50,
           ),
           CupertinoButton.filled(
-              onPressed: () => Get.back(), child: const Text("Go to back"))
+            onPressed: () => Get.back(),
+            child: const Text("Go to back"),
+          ),
         ],
       )),
     );

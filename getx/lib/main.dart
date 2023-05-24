@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/routes/pages.dart';
 import 'package:getx/routes/routes.dart';
+import 'package:getx/services/test_service.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  Get.put(TestService());
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,7 +17,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      initialRoute: Routes.TEST_PAGE,
+      initialRoute: Routes.HOME_PAGE,
       getPages: Pages.pages,
     );
   }
