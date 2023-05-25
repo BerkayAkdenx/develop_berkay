@@ -4,20 +4,13 @@ import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
+import 'package:profile_bitely/feature/settings/controller/push_notification_controller.dart';
 import 'package:profile_bitely/feature/settings/widgets/appbar_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/title_with_text_widget.dart';
 
-class PushNotificationPage extends StatefulWidget {
+class PushNotificationPage extends GetView<PushNotificationController> {
   const PushNotificationPage({super.key});
 
-  @override
-  State<PushNotificationPage> createState() => _PushNotificationPageState();
-}
-
-class _PushNotificationPageState extends State<PushNotificationPage> {
-  bool morningIsSwicthed = false;
-  bool stayingIsSwicthed = false;
-  bool upIsSwicthed = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,18 +34,18 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
                   text: AppTexts.getReminders.tr,
                   title: AppTexts.morningLearning.tr,
                 ),
-                Switch(
-                  inactiveThumbColor: AppColors.profileBlackLight,
-                  inactiveTrackColor: AppColors.blackLight,
-                  activeTrackColor: AppColors.blackLight,
-                  activeColor: AppColors.greenLight,
-                  value: morningIsSwicthed,
-                  onChanged: (value) {
-                    setState(() {
-                      morningIsSwicthed = value;
-                    });
-                  },
-                )
+                Obx(
+                  () => Switch(
+                    inactiveThumbColor: AppColors.profileBlackLight,
+                    inactiveTrackColor: AppColors.blackLight,
+                    activeTrackColor: AppColors.blackLight,
+                    activeColor: AppColors.greenLight,
+                    value: controller.morningIsSwicthed.value,
+                    onChanged: (value) {
+                      controller.onchangeMorning(value);
+                    },
+                  ),
+                ),
               ],
             ),
           ),
@@ -66,18 +59,18 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
                   title: AppTexts.stayingOnTrack.tr,
                   text: AppTexts.rememberToHit.tr,
                 ),
-                Switch(
-                  inactiveThumbColor: AppColors.profileBlackLight,
-                  inactiveTrackColor: AppColors.blackLight,
-                  activeTrackColor: AppColors.blackLight,
-                  activeColor: AppColors.greenLight,
-                  value: stayingIsSwicthed,
-                  onChanged: (value) {
-                    setState(() {
-                      stayingIsSwicthed = value;
-                    });
-                  },
-                )
+                Obx(
+                  () => Switch(
+                    inactiveThumbColor: AppColors.profileBlackLight,
+                    inactiveTrackColor: AppColors.blackLight,
+                    activeTrackColor: AppColors.blackLight,
+                    activeColor: AppColors.greenLight,
+                    value: controller.stayingIsSwicthed.value,
+                    onChanged: (value) {
+                      controller.onchangeStaying(value);
+                    },
+                  ),
+                ),
               ],
             ),
           ),
@@ -91,18 +84,18 @@ class _PushNotificationPageState extends State<PushNotificationPage> {
                   title: AppTexts.upToDate.tr,
                   text: AppTexts.weWillRecommend.tr,
                 ),
-                Switch(
-                  inactiveThumbColor: AppColors.profileBlackLight,
-                  inactiveTrackColor: AppColors.blackLight,
-                  activeTrackColor: AppColors.blackLight,
-                  activeColor: AppColors.greenLight,
-                  value: upIsSwicthed,
-                  onChanged: (value) {
-                    setState(() {
-                      upIsSwicthed = value;
-                    });
-                  },
-                )
+                Obx(
+                  () => Switch(
+                    inactiveThumbColor: AppColors.profileBlackLight,
+                    inactiveTrackColor: AppColors.blackLight,
+                    activeTrackColor: AppColors.blackLight,
+                    activeColor: AppColors.greenLight,
+                    value: controller.upIsSwicthed.value,
+                    onChanged: (value) {
+                      controller.onchangeUp(value);
+                    },
+                  ),
+                ),
               ],
             ),
           )

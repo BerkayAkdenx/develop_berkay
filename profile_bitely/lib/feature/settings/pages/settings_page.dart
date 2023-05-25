@@ -5,13 +5,14 @@ import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
+import 'package:profile_bitely/feature/settings/controller/setting_page_controller.dart';
 import 'package:profile_bitely/feature/settings/routes/routes.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickless_container_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/image_widget.dart';
 
-class SettingPage extends StatelessWidget {
+class SettingPage extends GetView<SettingPageController> {
   const SettingPage({super.key});
 
   @override

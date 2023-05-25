@@ -3,11 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
+import 'package:profile_bitely/feature/settings/controller/notification_page_controller.dart';
 import 'package:profile_bitely/feature/settings/routes/routes.dart';
 import 'package:profile_bitely/feature/settings/widgets/appbar_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
 
-class NotificationPage extends StatelessWidget {
+class NotificationPage extends GetView<NotificationPageController> {
   const NotificationPage({super.key});
 
   @override
