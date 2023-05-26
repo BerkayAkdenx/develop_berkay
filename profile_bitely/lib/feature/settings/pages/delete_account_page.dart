@@ -5,22 +5,13 @@ import 'package:profile_bitely/core/Global/Resources/app_colors.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
+import 'package:profile_bitely/feature/settings/controller/delete_account_page_controller.dart';
 import 'package:profile_bitely/feature/settings/widgets/appbar_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/reason_container_widget.dart';
 
-class DeleteAccountPage extends StatefulWidget {
+class DeleteAccountPage extends GetView<DeleteAccountPageController> {
   const DeleteAccountPage({super.key});
-
-  @override
-  State<DeleteAccountPage> createState() => _DeleteAccountPageState();
-}
-
-class _DeleteAccountPageState extends State<DeleteAccountPage> {
-  bool ispressedCost = false;
-  bool ispressedIDont = false;
-  bool ispressedIFound = false;
-  bool ispressedTechnical = false;
 
   @override
   Widget build(BuildContext context) {
@@ -51,41 +42,33 @@ class _DeleteAccountPageState extends State<DeleteAccountPage> {
                     ),
                   ),
                   SizedBox(height: 33.h),
-                  ReasonContainerWidget(
-                    onpressed: () {
-                      setState(() {
-                        ispressedCost = !ispressedCost;
-                      });
-                    },
-                    enable: ispressedCost,
-                    text: AppTexts.costRelatedReasons.tr,
+                  Obx(
+                    () => ReasonContainerWidget(
+                      onpressed: () => controller.onChangeCost(),
+                      enable: controller.ispressedCost.value,
+                      text: AppTexts.costRelatedReasons.tr,
+                    ),
                   ),
-                  ReasonContainerWidget(
-                    onpressed: () {
-                      setState(() {
-                        ispressedIDont = !ispressedIDont;
-                      });
-                    },
-                    enable: ispressedIDont,
-                    text: AppTexts.iDontUse.tr,
+                  Obx(
+                    () => ReasonContainerWidget(
+                      onpressed: () => controller.onChangeIDont(),
+                      enable: controller.ispressedIDont.value,
+                      text: AppTexts.iDontUse.tr,
+                    ),
                   ),
-                  ReasonContainerWidget(
-                    onpressed: () {
-                      setState(() {
-                        ispressedIFound = !ispressedIFound;
-                      });
-                    },
-                    enable: ispressedIFound,
-                    text: AppTexts.iFoundABetter.tr,
+                  Obx(
+                    () => ReasonContainerWidget(
+                      onpressed: () => controller.onChangeIFound(),
+                      enable: controller.ispressedIFound.value,
+                      text: AppTexts.iFoundABetter.tr,
+                    ),
                   ),
-                  ReasonContainerWidget(
-                    onpressed: () {
-                      setState(() {
-                        ispressedTechnical = !ispressedTechnical;
-                      });
-                    },
-                    enable: ispressedTechnical,
-                    text: AppTexts.technicalIssues.tr,
+                  Obx(
+                    () => ReasonContainerWidget(
+                      onpressed: () => controller.onChangeTechnical(),
+                      enable: controller.ispressedTechnical.value,
+                      text: AppTexts.technicalIssues.tr,
+                    ),
                   ),
                   Padding(
                     padding: EdgeInsets.only(top: 27.h),
