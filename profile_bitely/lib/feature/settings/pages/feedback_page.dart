@@ -5,20 +5,14 @@ import 'package:profile_bitely/core/Global/Resources/app_radiuses.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
+import 'package:profile_bitely/feature/settings/controller/feedback_page_controller.dart';
 import 'package:profile_bitely/feature/settings/widgets/appbar_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 
 // ignore: must_be_immutable
-class FeedbackPage extends StatefulWidget {
+class FeedbackPage extends GetView<FeedBackPageController> {
   const FeedbackPage({super.key});
 
-  @override
-  State<FeedbackPage> createState() => _FeedbackPageState();
-}
-
-class _FeedbackPageState extends State<FeedbackPage> {
-  TextEditingController feedbackController = TextEditingController();
-  bool isEmpty = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,17 +24,9 @@ class _FeedbackPageState extends State<FeedbackPage> {
             padding: AppSpacings.sSymmetricV40H40,
             child: TextField(
               onChanged: (value) {
-                setState(() {
-                  if (value.isEmpty) {
-                    isEmpty = true;
-                  } else if (value.length <= 150) {
-                    isEmpty = false;
-                  } else {
-                    isEmpty = true;
-                  }
-                });
+                controller.validate(value);
               },
-              controller: feedbackController,
+              controller: controller.feedbackTEC,
               keyboardType: TextInputType.multiline,
               maxLines: 12,
               style: AppTextStyles.bodyMediumLight,
@@ -57,7 +43,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
           ),
           BaseButtonWidget(
             text: AppTexts.buttonSubmit.tr,
-            onPressed: isEmpty ? null : () => print("clicked submit button"),
+            onPressed: controller.isButtonDisable(),
           )
         ],
       ),
