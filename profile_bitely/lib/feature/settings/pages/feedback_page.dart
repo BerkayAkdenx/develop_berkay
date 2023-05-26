@@ -41,10 +41,12 @@ class FeedbackPage extends GetView<FeedBackPageController> {
               ),
             ),
           ),
-          BaseButtonWidget(
-            text: AppTexts.buttonSubmit.tr,
-            onPressed: controller.isButtonDisable(),
-          )
+          Obx(
+            () => BaseButtonWidget(
+              text: AppTexts.buttonSubmit.tr,
+              onPressed: controller.isButtonDisable(),
+            ),
+          ),
         ],
       ),
     );
