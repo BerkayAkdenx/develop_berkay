@@ -8,7 +8,21 @@ class AppTranslations extends Translations {
 
           // base start
           "bitely": "bitely",
-          "billingDetails": "Billing Details",
+          "showMore": "Show More",
+          "showLess": "Show Less",
+          "cancelAnyTime": "Cancel anytime in the App Store",
+          "startMyFree14": "Start My Free 14 Days",
+          "display": "Display",
+          "darkMode": "Dark Mode",
+          "lightMode": "Light Mode",
+          "memberShipFeesAreBilled":
+              "Membership fees  are billed at the beginning of each period and may take a few days after the billing date to appear on your account.",
+          "yourMemberShip": "Your Membershıp",
+          "cancelPremium": "Cancel Premium",
+          "cancelSubscription": "Cancel Subscription",
+          "saveButton": "Save",
+          "premiumDetails": "Premium Details",
+          "StayingOnTrack": "Staying on Track",
           "welcomeToBitely": "Welcome to Bitely",
           "learnFifteen": "Learn 15 min a day",
           "alreadyHaveAccount": "Already have an account?",
@@ -97,8 +111,8 @@ class AppTranslations extends Translations {
           "like": "Like",
           "remindMe": "Remind me",
           "share": "Share",
-          "seeMore": "see More",
-          "seeAll": "see All",
+          "seeMore": "See More",
+          "seeAll": "See All",
           "bites": "Bites",
           "page": "Page",
           "of": "of",
@@ -146,7 +160,7 @@ class AppTranslations extends Translations {
           "morningLearning": "Morning Learning",
           "youCanChooseMultipleFor":
               "You can choose multiple content languages for the content you want to see.",
-          "stayingOnTrack": "Staying on Track",
+          "stayingInTrack": "Staying on Track",
           "getReminders":
               "Get reminders to revise book ideas and get inspired by daily insights.",
           "remeberToHit":
@@ -163,11 +177,13 @@ class AppTranslations extends Translations {
           "technicalIssues": "Technical issues",
           "notNow": "Not Now",
           "appLanguage": "App Language",
+          "language": "Language",
           "contentLanguage": "Content Language",
           "letUsKnow": "Let us know your thoughts!",
           "subject": "Subject",
           "currentPassword": "Current Password",
           "newPassword": "Enter New Password ",
+          "newPassword2": "New Password ",
           "reEnterPassword": "Re-enter Password",
           "message": "Message",
           "beginner": "Beginner",
@@ -194,7 +210,7 @@ class AppTranslations extends Translations {
           "yearly": 'Yearly',
           "payOnce": 'Pay once,cancel anytime',
           "personalGuidance": "Personal Guidance",
-          "endlessContent": "endlessContent",
+          "endlessContent": "Endless Content",
           "doubleYour": "Double your learning speed",
           "proveYourKnowledge": "Prove Your Knowledge",
           "getPersonalized":
@@ -218,7 +234,7 @@ class AppTranslations extends Translations {
           "buttonIWantToPick": "I want to pick one myself",
           "buttonIdLikeToSee": "I'd like to see my activities",
           "buttonDiscover": "Discover",
-          "buttonsingOut": "Sing Out",
+          "buttonSignOut": "Sign Out",
           "buttonExplore": "Explore",
           "buttonChooseYourPlan": "Choose Your Plan",
           "buttonStartMyFree": "Start My Free 14 Days",
@@ -256,6 +272,12 @@ class AppTranslations extends Translations {
           "confirmPassword": "Confirm Password",
           "enterVerificationCode": "Enter Verification Code",
           //label end
+          // Alert Dialog Start
+          "alertAddedTo":
+              "Added to your content list. Immediately do you want to read it?",
+          "alertMaximum": "Maximum daily Bite limit you have reached",
+
+          // Alert Dialog End
           // validations start
           "eightCharacters": "(8+ characters)",
           // validations end
@@ -293,24 +315,71 @@ class AppTranslations extends Translations {
           "completed": "Completed",
           "preview": "Preview",
           "close": "close",
-          "save": "SAVE",
           "buttonDone": "Done",
           "weWillRecommend":
               "We’ll recommend you new gems based on your interest.",
           "buttonDeleteMyAccount": "Delete My Account",
 
           // title end
+
+          //slider start
+
+          //slider1
+          "sliderTitle1": "The Art of War",
+          "sliderCategory1": "Leadership & Entrepreneurship",
+          "sliderDescription1":
+              "Master the art of strategy and achieve victory in any arena",
+          //slider2
+          "sliderTitle2": "Head Strong",
+          "sliderCategory2": "Sport & Lifestyle",
+          "sliderDescription2":
+              "The Bulletproof Plan to Boost Brainpower, Increase Focus, and Maximize Performance – in Just Two Weeks",
+          //slider3
+          "sliderTitle3": "Communicate with Master",
+          "sliderCategory3": "Communication Skills",
+          "sliderDescription3":
+              "Unlock the secrets to boost your speaking and writing skills with J.D. Schramm's guide on effective communication",
+          //slider4
+          "sliderTitle4": "Hear Yourself",
+          "sliderCategory4": "Self-growth",
+          "sliderDescription4":
+              "Find your inner peace and happiness through self-reflection and discovery",
+          //slider5
+          "sliderTitle5": "Modern Romance",
+          "sliderCategory5": "Sex & Relationships",
+          "sliderDescription5":
+              "Navigate the intricacies of modern-day dating and relationships with Aziz Ansari's witty and thought-provoking commentary on love in the digital age",
+          //slider end
+          //my bites button
+          "imReadyLetsGet": "I'm ready let's get started",
+          "letsStart": "Let's start",
+          "imDone": "I'm done",
+          "newBitePlease": "New bite please",
+          //my bites button
         },
         'tr': {
           "welcome": "Hoş geldiniz!",
           "min": "Dk",
           "preview": "Ön İzleme",
           "close": "Kapat",
-          "save": "KAYDET",
           "buttonDone": "Bitti",
+          "cancelPremium": "primi iptal et",
+          "cancelSubscription": "Aboneliği iptal et",
           // base start
           "bitely": "bitely",
-          "billingDetails": "Fatura Detayları",
+          "cancelAnyTime": "App Store'da istediğiniz zaman iptal edin",
+          "display": "Ekran",
+          "darkMode": "Karanlık mod",
+          "lightMode": "ışık modu",
+          "startMyFree14": "Ücretsiz 14 Günüme Başla",
+          "yourMemberShip": "senin üyeliğin",
+          "showMore": "Daha fazla göster",
+          "showLess": "Daha az göster",
+          "memberShipFeesAreBilled":
+              "Üyelik ücretleri her dönemin başında faturalandırılır ve fatura tarihinden sonra hesabınızda görünmesi birkaç gün sürebilir.",
+          "saveButton": "Kaydet",
+          "premiumDetails": "Fatura Detayları",
+          "StayingOnTrack": "Hedefinden Şaşma",
           "welcomeToBitely": "Bitely'e Hoşgeldin",
           "learnFifteen": "15 dakikada bir kitap bitir",
           "alreadyHaveAccount": 'Zaten hesabın var mı?',
@@ -399,7 +468,7 @@ class AppTranslations extends Translations {
           "remindMe": "Hatırlat",
           "share": "Paylaş",
           "seeMore": "devamı",
-          "seeAll": "Tümünü Gör",
+          "seeAll": "Tümü",
           "bites": "Bites",
           "page": "Sayfa",
           "of": "/",
@@ -446,7 +515,7 @@ class AppTranslations extends Translations {
           "updateOffers": "Güncellemeler & Teklifler",
           "morningLearning": "Güne Yeni Bir Bilgiyle Başla",
           "youCanChooseMultipleFor": "Birden fazla dil seçimi yapabilirsiniz",
-          "stayingOnTrack": "Hedefinden Şaşma",
+          "stayingInTrack": "Hedefinden Şaşma",
           "getReminders":
               "Günlük anahtar fikirlerle en sevdiğin kitapları tekrar et.",
           "remeberToHit": "Günlük okuma hedefini tamamlayarak serini koru.",
@@ -464,11 +533,13 @@ class AppTranslations extends Translations {
           "technicalIssues": "Teknik sorunlar",
           "notNow": "Henüz Değil",
           "appLanguage": "Uygulama Dili",
+          "language": "Dil",
           "contentLanguage": "İçerik Dili",
           "letUsKnow": "Düşüncelerinizi bizimle paylaşın!",
           "subject": "Konu",
           "currentPassword": "Güncel Şifre",
           "newPassword": "Yeni Şifre",
+          "newPassword2": "Yeni Şifre",
           "reEnterPassword": "Yeni Şifre (tekrar)",
           "message": "Mesaj",
           "beginner": "Başlangıç",
@@ -498,7 +569,7 @@ class AppTranslations extends Translations {
           "payOnce": 'Bir kere öde istediğin zaman iptal et',
           "personalGuidance": "Kişisel Rehber",
           "endlessContent": "Sınırsız Kitap",
-          "doubleYour": "Learn at your own pace without any limits",
+          "doubleYour": "Öğrenme hızınızı ikiye katlayın",
           "proveYourKnowledge": "Bilgini Kanıtla",
           "getPersonalized":
               "Yapay zeka ile kişiselleştirilmiş içerik kılavuzu",
@@ -523,7 +594,7 @@ class AppTranslations extends Translations {
           "buttonIWantToPick": "Kendim seçmek istiyorum",
           "buttonIdLikeToSee": "İstatistiklerini Gör",
           "buttonDiscover": "Keşfet",
-          "buttonsingOut": "Sing Out",
+          "buttonSignOut": "Hesabı Sil",
           "buttonExplore": "Keşfet",
           "buttonChooseYourPlan": "Plan Seç",
           "buttonStartMyFree": "Deneme Sürecine Başla",
@@ -555,13 +626,15 @@ class AppTranslations extends Translations {
           // appbar end
           // label start
           "name": "İsim",
-          "email": "Email",
+          "email": "E-posta",
           "password": "Şifre",
           "enterName": "Name Girin",
           "enterEmailAddress": "E-posta Adresini Girin",
           "confirmPassword": "Şifreyi Doğrula",
           "enterVerificationCode": "Doğrulama kodunu girin",
           //label end
+          "alertAddedTo": "Listene eklendi. Hemen okumamı ister misin?",
+          "alertMaximum": "Günlük maksimum sınırı aştınız.",
           // validations start
           "eightCharacters": "(8+ karakter)",
           // validations end
@@ -596,6 +669,40 @@ class AppTranslations extends Translations {
           "myBites": "Bitelarım",
           "completed": "Tamamlananlar",
           // title end
+
+          //slider start
+          //slider1
+          "sliderTitle1": "The Art of War",
+          "sliderCategory1": "Liderlik & Girişimcilik",
+          "sliderDescription1":
+              "Strateji sanatında ustalaşın ve hayatınızın her alanında zafere ulaşın",
+          //slider2
+          "sliderTitle2": "Head Strong",
+          "sliderCategory2": "Yaşam,Sağlık ve Spor-Health",
+          "sliderDescription2":
+              "Sadece İki Haftada Beyin Gücünüzü ve Odağınızı Artırmak, Performansı En Üst Düzeye Çıkarmak için Kurşun Geçirmez Plan!",
+          //slider3
+          "sliderTitle3": "Communicate with Master",
+          "sliderCategory3": "İletişim Becerileri",
+          "sliderDescription3":
+              "J.D. Schramm'ın etkili iletişim kılavuzuyla konuşma ve yazım becerilerinizi bir üst seviyeye çıkarmanın sırlarını keşfedin!",
+          //slider4
+          "sliderTitle4": "Hear Yourself",
+          "sliderCategory4": "Kişisel Gelişim",
+          "sliderDescription4":
+              "İç dünyanızda bir keşif yolculuğuna çıkarak huzura ve mutluluğa ulaşın",
+          //slider5
+          "sliderTitle5": "Modern Romance",
+          "sliderCategory5": "Cinsellik ve İliskiler",
+          "sliderDescription5":
+              "Aziz Ansari'nin dijital çağda aşk üzerine esprili ve düşündürücü yorumuyla günümüz flört ve ilişki dünyasında bir keşfe çıkın",
+          //slider end
+          //my bites button
+          "imReadyLetsGet": "ben hazırım hadi başlayalım",
+          "letsStart": "Hadi başlayalım",
+          "imDone": "bitirdim",
+          "newBitePlease": "yeni Bite lütfen",
+          //my bites button
         },
       };
 }

@@ -53,7 +53,7 @@ class SettingPage extends GetView<SettingPageController> {
               onPressed: () => Get.toNamed(Routes.EDIT_PAGE)),
           // this row for Billing Details
           ClickableContainerWidget(
-            text: AppTexts.billingDetails.tr,
+            text: AppTexts.premiumDetails.tr,
             onPressed: () => print("go to edit Billing Detail page"),
           ),
           // this row for Preferences
@@ -110,7 +110,7 @@ class SettingPage extends GetView<SettingPageController> {
           // this row for sign out button
           BaseButtonWidget(
             onPressed: () => print("clicked sing out"),
-            text: AppTexts.buttonsingOut.tr,
+            text: AppTexts.buttonSignOut.tr,
           ),
           SizedBox(
             height: 50.h,

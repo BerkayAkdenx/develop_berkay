@@ -25,6 +25,7 @@ class AppColors {
   static const grey = Color(0xffb5b5b5);
   static const greenLight = Color(0xff32FFB4);
   static const blueDark = Color(0xff182C5C);
+  static const backgroundAlertDialog = Color(0xFF1E1E1E);
   static const purple = Color(0xffC096FF);
   static const settingRowBackground = Color(0xff172138);
   static const profileBlackLight = Color(0xFF969696);

@@ -14,7 +14,7 @@ import 'package:profile_bitely/feature/settings/pages/settings_page.dart';
 import 'package:profile_bitely/feature/settings/routes/routes.dart';
 
 abstract class Pages {
-  static List<GetPage> pages = [
+  static List<GetPage> settingsPages = [
     GetPage(
       name: Routes.EDIT_PAGE,
       page: () => const EditPage(),

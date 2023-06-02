@@ -3,12 +3,25 @@ abstract class AppTexts {
       "welcome"; //silinecek, proje dışı kontrol amaclı kullandık
   // base start
   static const close = "close";
-  static const save = "save";
   static const buttonDone = "buttonDone";
   static const verifyAccount = "verifyAccount";
 
+  static const languageStorage = "lang";
+  static const themeStorage = "theme";
+
   static const bitely = "bitely";
-  static const billingDetails = "billingDetails";
+  static const showMore = "showMore";
+  static const showLess = "showLess";
+  static const startMyFree14 = "startMyFree14";
+  static const display = "display";
+  static const darkMode = "darkMode";
+  static const lightMode = "lightMode";
+  static const yourMemberShip = "yourMemberShip";
+  static const memberShipFeesAreBilled = "memberShipFeesAreBilled";
+  static const cancelPremium = 'cancelPremium';
+  static const cancelAnyTime = 'cancelAnyTime';
+  static const cancelSubscription = 'cancelSubscription';
+  static const premiumDetails = "premiumDetails";
   static const welcomeToBitely = "welcomeToBitely";
   static const learnFifteen = "learnFifteen";
   static const alreadyHaveAccount = "alreadyHaveAccount";
@@ -134,7 +147,7 @@ abstract class AppTexts {
   static const updateOffers = "updateOffers";
   static const morningLearning = "morningLearning";
   static const youCanChooseMultipleFor = "youCanChooseMultipleFor";
-  static const stayingOnTrack = "stayingOnTrack";
+  static const stayingInTrack = "stayingInTrack";
   static const getReminders = "getReminders";
   static const upToDate = "upToDate";
   static const weWillRecommend = "weWillRecommend";
@@ -147,11 +160,13 @@ abstract class AppTexts {
   static const technicalIssues = "technicalIssues";
   static const notNow = "notNow";
   static const appLanguage = "appLanguage";
+  static const language = "language";
   static const contentLanguage = "contentLanguage";
   static const letUsKnow = "letUsKnow";
   static const subject = "subject";
   static const currentPassword = "currentPassword";
   static const newPassword = "newPassword";
+  static const newPassword2 = "newPassword2";
   static const reEnterPassword = "reEnterPassword";
   static const message = "message";
   static const beginner = "beginner";
@@ -168,6 +183,7 @@ abstract class AppTexts {
   static const chooseAPlanFor = "chooseAPlanFor";
   static const basic = "basic";
   static const saveDollar = "saveDollar";
+  static const saveButton = "saveButton";
   static const cancel = "cancel";
   static const dollarFourtyNine = 'dollarFourtyNine';
   static const dollarFour = 'dollarFour';
@@ -202,7 +218,7 @@ abstract class AppTexts {
   static const buttonIWantToPick = "buttonIWantToPick";
   static const buttonIdLikeToSee = "buttonIdLikeToSee";
   static const buttonDiscover = "buttonDiscover";
-  static const buttonsingOut = "buttonsingOut";
+  static const buttonSignOut = "buttonSignOut";
   static const buttonExplore = "buttonExplore";
   static const buttonChooseYourPlan = "buttonChooseYourPlan";
   static const buttonStartMyFree = "buttonStartMyFree";
@@ -231,6 +247,11 @@ abstract class AppTexts {
   static const appbarContactUs = "appbarContactUs";
   static const appbarChangePassword = "appbarChangePassword";
   static const appbarTrainingPace = "appbarTrainingPace";
+  static const stayingOnTrack = "StayingOnTrack";
+  // Alert Dialog Start
+  static const alertAddedTo = "alertAddedTo";
+  static const alertMaximum = "alertMaximum";
+  // Alert Dialog End
 
   // appbar end
   // label start
@@ -297,4 +318,40 @@ abstract class AppTexts {
   static const invalidVerifyCode =
       "Invalid verification code provided, please try again.";
   static const userNotExists = "User does not exist.";
+
+//home page slider start
+  //slider 1
+  static const sliderTitle1 = "sliderTitle1";
+  static const sliderCategory1 = "sliderCategory1";
+  static const sliderDescription1 = "sliderDescription1";
+
+  //slider 2
+  static const sliderTitle2 = "sliderTitle2";
+  static const sliderCategory2 = "sliderCategory2";
+  static const sliderDescription2 = "sliderDescription2";
+
+  //slider 3
+  static const sliderTitle3 = "sliderTitle3";
+  static const sliderCategory3 = "sliderCategory3";
+  static const sliderDescription3 = "sliderDescription3";
+
+  //slider 4
+  static const sliderTitle4 = "sliderTitle4";
+  static const sliderCategory4 = "sliderCategory4";
+  static const sliderDescription4 = "sliderDescription4";
+
+  //slider 5
+  static const sliderTitle5 = "sliderTitle5";
+  static const sliderCategory5 = "sliderTitle5";
+  static const sliderDescription5 = "sliderDescription5";
+
+//home page slider end
+
+// my bites button labels
+  static const imReadyLetsGet = "imReadyLetsGet";
+  static const letsStart = "letsStart";
+  static const imDone = "imDone";
+  static const newBitePlease = "newBitePlease";
+
+// my bites button labels
 }

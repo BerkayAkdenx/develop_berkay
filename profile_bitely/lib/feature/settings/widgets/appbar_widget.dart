@@ -47,7 +47,7 @@ class AppbarWidget extends StatelessWidget {
                         ),
                         onPressed: onpressedForSave,
                         child: Text(
-                          AppTexts.save.tr,
+                          AppTexts.saveButton.tr,
                           style: AppTextStyles.bodySmallDark,
                         ),
                       ),
