@@ -6,7 +6,7 @@ import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
 import 'package:profile_bitely/feature/settings/controller/setting_page_controller.dart';
-import 'package:profile_bitely/feature/settings/routes/routes.dart';
+import 'package:profile_bitely/core/Routes/routes.dart';
 import 'package:profile_bitely/feature/settings/widgets/base_button_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickable_container_widget.dart';
 import 'package:profile_bitely/feature/settings/widgets/clickless_container_widget.dart';
@@ -27,7 +27,7 @@ class SettingPage extends GetView<SettingPageController> {
             child: Row(
               children: [
                 IconButton(
-                  onPressed: () => print("clicked  the back button"),
+                  onPressed: () => Get.back(),
                   icon: const Icon(
                     Icons.arrow_back_ios,
                     color: Colors.white,

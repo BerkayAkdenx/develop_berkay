@@ -7,6 +7,7 @@ import 'package:profile_bitely/core/Global/Resources/app_radiuses.dart';
 import 'package:profile_bitely/core/Global/Resources/app_spacings.dart';
 import 'package:profile_bitely/core/Global/Resources/app_text_styles.dart';
 import 'package:profile_bitely/core/Global/Resources/app_texts.dart';
+import 'package:profile_bitely/core/Routes/routes.dart';
 import 'package:profile_bitely/feature/profile/widgets/profile_get_premium_widget.dart';
 import 'package:profile_bitely/feature/profile/widgets/profile_page_column_widget.dart';
 import 'package:profile_bitely/feature/profile/widgets/profile_with_pro_widget.dart';
@@ -45,7 +46,7 @@ class ProfilePage extends StatelessWidget {
                     style: AppTextStyles.headlineLargeDark,
                   ),
                   GestureDetector(
-                      onTap: () => print("clicked the setting"),
+                      onTap: () => Get.toNamed(Routes.SETTINGS_PAGE),
                       child: Image.asset(AppImages.setting)),
                 ],
               ),
